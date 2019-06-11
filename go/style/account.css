@@ -1,0 +1,539 @@
+.wrapAccount{
+	background: #f5f5f5;
+	padding: 40px 50px;
+	max-width: 1025px;
+	margin: 0 auto;
+}
+.wrapAccount .title{
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+/*================================================================*/
+.formAccount{
+}
+.formAccount label{
+	font-weight: 900;
+}
+.formAccount label span{
+	color:#ff0000;
+}
+.formAccount input[type="text"],
+.formAccount input[type="password"],
+.formAccount select,
+.formAccount textarea{
+	width: 100%;
+	height: 40px;
+	border:solid 1px rgba(0,0,0,0.1);
+	padding-left: 10px;
+	resize:none;
+}
+.formAccount textarea{
+	height: 150px;
+	padding: 10px;
+	resize: none;
+}
+.designButton button{
+	width: 100%;
+	height: 40px;
+	border:none;
+	background: #faed24;
+	color:#333333;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.designButton button:hover{
+	background: #333333;
+	color:#faed24;
+}
+.formAccount .avatar{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.formAccount .avatar label{
+	width: 270px;
+	height: 270px;
+	border-radius: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+.formAccount .avatar label:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000000;
+	opacity: 0;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	pointer-events: none;
+}
+.formAccount .avatar label:hover:before{
+	opacity: 0.5;
+}
+.formAccount .avatar label .caption{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	display: block;
+	pointer-events: none;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	opacity: 0;
+}
+.formAccount .avatar label:hover .caption{
+	opacity: 1;
+}
+.formAccount .avatar label .caption .icon{
+	text-align: center;
+	margin-bottom: 10px;
+	display: block;
+}
+.formAccount .avatar label .caption .icon img{
+	max-width: 60px;
+}
+.formAccount .avatar label .caption .txt{
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	display: block;
+	font-weight: normal;
+	color:#ffffff;
+}
+.formAccount .profile{
+	padding-right: 40px;
+	position: relative;
+	bottom: 30px;
+}
+.formAccount .profile .name{
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 900;
+}
+.formAccount .profile .date{
+	font-size: 16px;
+	line-height: 24px;
+}
+.formAccount .profile .link{
+	position: absolute;
+	right:0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	max-width: 40px;
+}
+.formAccount .profile .link img{
+	width: 100%;
+	opacity: 0.5;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.formAccount .profile .link:hover img{
+	opacity: 1;
+}
+.formAccount .info{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+.formAccount .info .item{
+	background: #ffffff;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 0 10px;
+}
+.formAccount .info .item p{
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+.formAccount .info .item p.t{
+	font-weight: 900;
+	color:#666666;
+}
+/*========================================================*/
+.designPopup .fancybox-slide{
+	padding: 10px;
+}
+.designPopup .fancybox-slide--iframe .fancybox-content{
+	max-width: 540px;
+}
+.designPopup button[data-fancybox-close]{
+	top: 0;
+	right: 0;
+}
+#mvb-popup{
+	padding: 35px;
+	background: #f5f5f5;
+}
+#mvb-popup .title{
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+/*========================================================*/
+.toolsManager{
+	background: #eeeeee;
+}
+.toolsManager .wrapper{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menuManager ul{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+.menuManager ul li{
+	margin-right: 30px;
+}
+.menuManager ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: bold;
+    position: relative;
+    padding: 18px 0px;
+}
+.menuManager ul li:hover a,
+.menuManager ul li.active a{
+	color: #333333;
+}
+.menuManager ul li a:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	border-bottom: solid 2px #faed24;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.menuManager ul li:hover a:before,
+.menuManager ul li.active a:before{
+	right: 0;
+}
+.menuManager .mc-menu{
+	background: #333333;
+	font-size: 16px;
+	line-height: 24px;
+	color:#ffffff;
+	cursor: pointer;
+	position: relative;
+	padding: 8px 15px;
+}
+.menuManager .mc-menu:before{
+	content: "\f0d7";
+	font-family: fontAwesome;
+	position: absolute;
+	right:15px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.formManager{
+	width: 100%;
+	max-width: 390px;
+}
+.formManager .grid{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	margin: 0 -5px;
+}
+.formManager .grid .col{
+	padding: 0 5px;
+	width: 33.333333%;
+}
+.formManager input{
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	border:none;
+	border-radius: 5px;
+}
+.formManager button{
+	width: 100%;
+	height: 40px;
+	border:none;
+	background: #faed24;
+	color:#333333;
+	font-weight: 900;
+	text-align: center;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	border-radius: 5px;
+}
+.formManager button:hover{
+	background: #333333;
+	color:#faed24;
+}
+.itemManager{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: dashed 1px rgba(0,0,0,0.15);
+}
+.itemManager .product{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	max-width: 450px;
+}
+.itemManager .product .img{
+	width: 110px;
+	margin-right: 15px;
+	flex-shrink: 0;
+}
+.itemManager .product .tend{
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.itemManager .product .code{
+	font-size: 15px;
+	line-height: 23px;
+}
+.itemManager .product .code span{
+	font-weight: bold;
+	color:#eb0000;
+}
+.itemManager .product .txt{
+	color:#666666;
+}
+.itemManager .info{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.itemManager .info .txtPrice{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 600;
+	text-align: right;
+	margin-bottom: 5px;
+}
+.itemManager .info .price{
+	text-align: right;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+.itemManager .info .price span{
+	color: #eb0000;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+}
+.itemManager .info .status{
+	display: inline-block;
+	text-align: right;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color:#ffffff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+.itemManager .info .man a{
+	display: block;
+	width: 150px;
+	height: 35px;
+	background:#333333;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 35px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.itemManager .info .man a:hover{
+	background: #faed24;
+	color: #333333;
+}
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+/*==========================================================================*/
+@media all and (max-width: 1100px){
+.menuManager ul li{
+	margin-right: 20px;
+}
+}
+
+@media all and (max-width: 991px){
+.wrapContact{
+	padding: 20px 15px;
+}
+.toolsManager{
+	background: #ffffff;
+	padding-bottom: 10px;
+}
+.toolsManager .wrapper{
+	display: block;
+}
+.formManager{
+	max-width: initial;
+}
+.formManager .grid{
+	display: block;
+}
+.formManager .grid .col{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.formManager input{
+	background: #f5f5f5;
+}
+.menuManager{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.menuManager ul{
+	background: #f5f5f5;
+	display: none;
+	border:solid 1px rgba(0,0,0,0.15);
+	border-top: none;
+}
+.menuManager.active ul{
+	display: block;
+}
+.menuManager ul li{
+	margin-right: 0;
+	border-bottom: dashed 1px rgba(0,0,0,0.1);
+}
+.menuManager ul li:last-child{
+	border-bottom: none;
+}
+.menuManager ul li a{
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	padding: 8px 15px;
+}
+.menuManager ul li a:before{
+	display: none;
+}
+}
+
+@media all and (max-width: 767px){
+.formCart .time{
+	width: 100px;
+}
+.wrapContact .title{
+	font-size: 25px;
+	line-height: 35px;
+}
+.wrapContact .price span{
+	font-size: 20px;
+	line-height: 30px;
+}
+.wrapAccount,
+#mvb-popup{
+	padding: 25px 20px;
+}
+.wrapAccount .title,
+#mvb-popup .title{
+	font-size: 20px;
+	line-height: 30px;
+}
+.itemManager{
+	display: block;
+	padding-left: 130px;
+	position: relative;
+}
+.itemManager .info .txtPrice,
+.itemManager .info .price{
+	text-align: left;
+	margin-bottom: 0;
+}
+.itemManager .product{
+	display: block;
+	max-width: 100%;
+}
+.itemManager .product .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+}
+
+@media all and (max-width: 420px){
+.formAccount .info{
+	display: block;
+}
+.formAccount .info .item{
+	margin: 0;
+	margin-bottom: 20px;
+}
+.formAccount .avatar label{
+	width: 200px;
+	height: 200px;
+}
+.itemManager{
+	padding-left: 0;
+}
+.itemManager .product .img{
+	position:initial;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	max-width: 150px;
+}
+.itemManager .product .tend{
+	font-size: 18px;
+	line-height: 26px;
+}
+}

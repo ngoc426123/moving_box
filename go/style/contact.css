@@ -1,0 +1,146 @@
+.gridContact{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: stretch;
+}
+.gridContact .col{
+	width: 50%;
+}
+.gridContact .col:first-child{
+	padding-right: 65px;
+}
+.gridContact .col:last-child{
+	background: #444444;
+}
+.formContact .txt{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+.formContact label{
+	font-weight: 500;
+}
+.formContact label span{
+	color:#ff0000;
+}
+.formContact input,
+.formContact textarea{
+	width: 100%;
+	height: 40px;
+	resize: none;
+	padding-left: 10px;
+	border:solid 1px rgba(0,0,0,0.15);
+}
+.formContact button{
+	width: 100%;
+	background: #fafafa;
+	letter-spacing: 2.25px;
+	border:solid 1px rgba(0,0,0,0.15);
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 20px;
+	height: 40px;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.formContact button:hover{
+	background: #faed24;
+	color:#333333;
+}
+/*==============================================*/
+.titleContact{
+	color:#faed24;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 45px 45px;
+	border-bottom: solid 1px rgba(255,255,255,0.15);
+}
+.infoContact {
+	padding: 40px 45px;
+	border-bottom: solid 1px rgba(255,255,255,0.15);
+}
+.infoContact .name{
+	font-size: 16px;
+	line-height: 26px;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.infoContact .wrap{
+	margin-bottom: 10px;
+}
+.infoContact .be{
+	color:#cccccc;
+}
+.infoContact .be span{
+	color:#ffffff;
+}
+.infoContact .be a{
+	color:inherit;
+}
+.infoContact .be a:hover{
+	color:#ffffff;
+}
+.infoContact .df{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+.infoContact .link{
+	margin-right: 30px;
+}
+.infoContact .link a{
+	color:#faed24;
+	font-weight: 300;
+}
+.infoContact .map a{
+	color:#faed24;
+	font-weight: 300;
+}
+.infoContact .map a span{
+	padding-left: 20px;
+	position: relative;
+}
+.infoContact .map a span:before{
+	content: "\f041";
+	font-family: fontAwesome;
+	position: absolute;
+	top: -2px;
+	left: 0;
+	font-weight: normal;
+}
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media all and (max-width: 991px){
+.gridContact{
+	display: block;
+}
+.gridContact .col{
+	width: 100%;
+}
+.gridContact .col:first-child{
+	padding-right: 0;
+}
+.titleContact,
+.infoContact{
+	padding: 35px 20px;
+}
+}
+
+@media all and (max-width: 768px){
+
+}
+
+@media all and (max-width: 640px){
+
+}

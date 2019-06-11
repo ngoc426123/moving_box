@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MOVING BOX</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="js/menumobile/menumobile.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/menumobile/menumobile.js"></script>
+	<script src="js/style.js" type="text/javascript"></script>
+	<!--===MODULE===-->
+	<link rel="stylesheet" href="style/service.css">
+	<!--===MODULE===--->
+</head>
+<body>
+	<div id="mvb-container">
+		<!--===BEGIN : HEADER===-->
+		<div id="mvb-header">
+			<div class="mainHead">
+				<div class="wrapper">
+					<div class="logo"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<div class="header-tools hidden-sm hidden-xs">
+						<div class="row-tools mb">
+							<div class="languageTop">
+								<div class="icon"><span>Ngôn ngữ</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href=""><img src="images/flag-vn.svg" alt=""><span>Tiếng Việt</span></a></li>
+										<li><a href=""><img src="images/flag-en.svg" alt=""><span>Tiếng Anh</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="emailTop"><a href=""><span>Đăng ký mail</span></a></div>
+							<!--===CHUA DANG NHAP===-->
+							<div class="memberTop">
+								<div class="icon"><span>Tài khoản</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href="10_form_dang_ky_1.html">Đăng ký thành viên</a></li>
+										<li><a href="10_form_dang_nhap_1.html">Đăng nhập thành viên</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--===DA DANG NHAP===-->
+							<!-- <div class="memberTop">
+								<div class="icon"><span>Vũ Văn Hải</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href="">Thông tin tài khoản</a></li>
+										<li><a href="">Đổi mật khẩu</a></li>
+										<li><a href="">Lịch sử đặt xe</a></li>
+										<li><a href="">Đăng xuất</a></li>
+									</ul>
+								</div>
+							</div> -->
+							<div class="hotlineTop">
+								<div class="txt">Liên hệ</div>
+								<a href="tel:0522.927.508"><span>0522.927.508</span></a>
+							</div>
+						</div>
+						<div class="row-tools">
+							<div class="menuTop">
+								<ul>
+									<li><a href="index.html">TRANG CHỦ</a></li>
+									<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
+										<ul>
+				                    	    <li><a href="">Về chúng tôi</a></li>
+				                    	    <li><a href="">Lịch sử hình thành</a></li>
+				                    	    <li><a href="">Hồ sơ năng lực</a></li>
+				                    	    <li><a href="">Sơ đồ tổ chức</a></li>
+				                    	</ul>
+									</li>
+									<li class="current"><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
+									<li><a href="4_xe_moi_nhap_1.html">đặt xe</a>
+										<ul>
+											<li><a href="">Vi vu nội thành</a>
+												<ul>
+													<li><a href="">Limo 4 chỗ</a></li>
+													<li><a href="">Limo 16 chỗ</a></li>
+													<li><a href="">Limo 32 chỗ</a></li>
+													<li><a href="">Limo 50 chỗ</a></li>
+												</ul>
+											</li>
+											<li><a href="">Xe đám cưới</a>
+												<ul>
+													<li><a href="">Mex 4 chỗ</a></li>
+													<li><a href="">Mex 16 chỗ</a></li>
+													<li><a href="">Mex 32 chỗ</a></li>
+													<li><a href="">Mex 50 chỗ</a></li>
+												</ul>
+											</li>
+											<li><a href="">Xe du lịch</a></li>
+											<li><a href="">Xe đi chơi</a></li>
+										</ul>
+									</li>
+									<li><a href="5_cam_nhan_1.html">CẢM NHẬN</a></li>
+									<li><a href="6_tin_tuc_1.html">TIN TỨC</a></li>
+									<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
+									<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
+								</ul>
+							</div>
+							<div class="searchTop">
+                                <div class="icon"><img src="images/i-search.svg" alt=""></div>
+                                <div class="popup">
+                                    <div class="wrapper">
+                                        <form name="formSearch" method="post" action="" class="box_search">
+                                            <input name="keyword" type="text" class="text_search">
+                                            <span class="place">Nhập từ khóa tìm kiếm</span>
+                                            <input name="do_search" value="1" type="hidden">
+                                        </form>
+                                    </div>
+                                    <div class="closez"><img src="images/i-close.svg" alt=""></div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="header-tools hidden-lg hidden-md">
+                        <div class="menu_mobile">
+                            <div class="icon"><span class="style_icon"></span></div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--===END : HEADER===-->
+		<!--===BEGIN : CONTENT===-->
+		<div id="mvb-content">
+			<!--===MAIN TOP===-->
+			<div class="mvb-main-top">
+				<!--===slide page===-->
+				<div id="slidePage" class="slick-init">
+					<div class="item"><div class="img" style="background-image: url(images/about/slide.jpg);"></div></div>
+					<div class="item"><div class="img" style="background-image: url(images/about/slide.jpg);"></div></div>
+				</div>
+				<!--===BREADCRUMB===-->
+				<div class="breadcrumb hidden-sm hidden-xs">
+                    <div class="wrapper">
+                    	<div class="navation">
+                    	    <ul>
+                    	        <li><a><span>Trang chủ</span></a></li>
+                    	        <li><a><span>Dịch vụ</span></a></li>
+                    	    </ul>
+                    	</div>
+                    </div>
+                </div>
+			</div>
+			<!--===MAIN CONTENT===-->
+			<div class="wrapCont">
+				<div class="wrapper">
+					<div class="box">
+						<div class="box-title"><h1 class="fTitle">Dịch vụ cho thuê xe tự lái</h1></div>
+						<div class="box-content">
+							<div class="the-content desc">
+								<p>Yên tâm lái xe, chủ động lộ trình, tiết kiệm chi phí, an toàn chuyến đi</p>
+								<p>Bạn đã lên sẵn lộ trình và biết rõ cung đường, nhu cầu đi lại của mình,và chỉ cần 1 dịch vụ cho thuê xe tự lái?</p>
+								<p>Gia đình, nhóm bạn, công ty về quê, đi chơi hay công tác? Bạn lại cần 1 dịch vụ cho thuê xe tự lái !</p>
+								<p>Bạn đã yên tâm vào tay lái và yêu thích cảm giác ôm vô lăng vi vu tự do, riêng tư thoải mái</p>
+								<p>Và bạn cần thuê một chiếc xe tự lái như ý với mức giá hợp lý từ các nhà xe uy tín?</p>
+								<p>Vậy thì mời bạn chọn xe tự lái với <strong>Moving box</strong>: Sàn đặt xe online tự lái siêu rẻ với hàng trăm chiếc xe sẵn sàng lên đường</p>
+								<p><strong>Moving box</strong> giúp bạn kết nối với hàng trăm nhà xe, chủ xe uy tín, chất lượng cao, xe đời mới, niêm yết giá rõ ràng cho bạn dễ dàng lựa chọn</p>
+								<p>Dễ dàng chọn chiếc xe ưng ý ngay gần khu vực bạn ở</p>
+								<p>Dễ dàng so sánh giá giữa các nhà xe, loại xe, đời xe, nội thất</p>
+								<p>Biết rõ chủ xe, nhà xe, xe công ty hay cá nhân</p>
+								<p>Thủ tục dịch vụ cho thuê xe tự lái đơn giản, rõ ràng, cam kết chặt chẽ</p>
+								<p>Dịch vụ hỗ trợ đi kèm uy tín, tận tình</p>
+								<p>Giao xe đúng giờ</p>
+								<p>Kiểm tra xe toàn diện, máy móc, thiết bị hỗ trợ đi kèm xe trước khi giao xe</p>
+								<p>Giao đúng loại xe, chất lượng cao, đảm bảo xe đời mới, chạy thử kiểm tra</p>
+								<p>Nhân viên <strong>Moving box</strong> trách nhiệm, hướng dẫn khách hàng các quy định an toàn, kiểm tra giấy tờ, kiểm tra xe bên trong, bên ngoài, bánh lái, nhiên liệu, nội thất kĩ càng, chuyên nghiệp.</p>
+								<p><strong>Moving box</strong>  tư vấn hỗ trợ online hoặc qua điện thoại suốt hành trình vói dịch vụ cho thuê xe tự lái.</p>
+								<p>
+									<img src="images/service/img1.jpg" alt="">
+								</p>
+								<p><strong>Thủ tục thuê xe tự lái:</strong></p>
+								<p><strong>* Thủ tục nhận xe:</strong></p>
+								<p>- Quý khách phải có Hộ Khẩu ở TPHCM hoặc hộ khẩu tại khu vực thuê xe.</p>
+								<p>- Có Bằng lái B2 trở lên.</p>
+								<p>- Quý khách thế chấp: Hộ khẩu bản gốc + Một xe gắn máy chính chủ có Cavet xe trị giá trên 15 triệu ( Nếu không có xe gắn máy, quý khách có thể thế chấp 15 triệu đồng tiền mặt )</p>
+								<p>- Đối với Công ty thủ tục thuê cần có: GPKD bản chính, 15 triệu tiền mặt.</p>
+								<p><strong>* Thủ tục trả xe :</strong></p>
+								<p>- Quá giờ quy định sẽ phải trả thêm tiền 100,000VND/giờ.</p>
+								<p>- Khi trả xe, cả 02 sẽ đối chiếu tình trạng xe so với ban đầu, mức nhiên liệu.</p>
+								<p>- Rửa xe sạch sẽ như lúc nhận, nếu quý khách không có thời gian rửa thì bên cho thuê sẽ phụ thu 100,000 đ.</p>
+								<p>- Hoàn trả xe và giấy tờ của 2 bên.</p>
+								<p>Gọi ngay cho <strong>Moving box</strong> để được tư vấn kĩ càng hơn hoặc so sánh mức giá và lựa chọn chiếc xe mà bạn muốn thuê tại ezbook.vn nhé! Thật dễ dàng với dịch vụ cho thuê xe tự lái cùng <strong>Moving box</strong> phải không nào!</p>
+								<p>Cùng <strong>Moving box</strong> lên đường thôi!</p>
+							</div>
+							<div class="myTags">
+	                            <p>Tags :</p>
+	                            <ul class="list-inline text-left">
+	                                <li><a href="#">Inspiration</a></li>
+	                                <li><a href="#">Workspace</a></li>
+	                                <li><a href="#">Minimal</a></li>
+	                                <li><a href="#">Decoation</a></li>
+	                            </ul>
+	                        </div>
+	                        <div class="myTools">
+	                            <div class="share">
+	                                <ul>
+	                                    <li><a href="#"><img src="images/like_face.png" alt=""></a></li>
+	                                    <li><a href="#"><img src="images/share_fac.png" alt=""></a></li>
+	                                    <li><a href="#"><img src="images/share_goo.png" alt=""></a></li>
+	                                    <li><a href="#"><img src="images/share_twi.png" alt=""></a></li>
+	                                </ul>
+	                                <div class="clear"></div>
+	                            </div>
+	                            <div class="print hidden-sm hidden-xs">
+	                                <ul>
+	                                    <li><a href="" class="fa-print">In bài viết</a></li>
+	                                    <li><a href="" class="fa-mail-reply-all">Quay lại</a></li>
+	                                </ul>
+	                                <div class="clear"></div>
+	                            </div>
+	                            <div class="clear"></div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===END : CONTENT===-->
+		<!--===BEGIN : FOOTER===-->
+		<div id="mvb-footer">
+			<div class="mainFoot">
+				<div class="wrapper">
+					<div class="logoFoot hidden-lg hidden-md hidden-sm"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<div class="addressFoot">
+						<div class="name">MOVING BOX</div>
+						<div class="be"><strong>[A]</strong>: 123 Cộng Hòa, Phương 15, Quận Tân Bình, Tp.HCM</div>
+						<div class="be"><strong>[T]</strong>: 0909 919293</div>
+						<div class="be"><strong>[E]</strong>: example@gmail.com</div>
+						<div class="be"><strong>[W]</strong>: www.movingbox.com.vn</div>
+					</div>
+					<div class="right">
+						<div class="logoFoot hidden-xs"><a href=""><img src="images/logo.png" alt=""></a></div>
+						<div class="socialFoot">
+							<ul>
+								<li><a href=""><img src="images/i-facebook.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-twitter.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-instagram.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-pinterest.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="botFoot">
+				<div class="wrapper">
+					<div class="congthuongImg"><a href=""><img src="images/congthuong.png" alt=""></a></div>
+					<div class="menuCp">
+						<ul>
+							<li><a href="">Điều khoản</a></li>
+							<li><a href="">Chính sách bảo mật</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===END : FOOTER===-->
+	</div>
+	<!--==BEGIN: MENU_MOBILE_NAV==-->
+    <div class="menu_mobile">
+        <div class="divmm">
+            <div class="mmContent">
+                <div class="mmMenu">
+                	<!--===CHUA DANG NHAP===-->
+                    <div class="mmMember">
+                    	<div class="listNot">
+                    		<ul>
+                    			<li><a href="">Đăng ký</a></li>
+                    			<li><a href="">Đăng nhập</a></li>
+                    		</ul>
+                    	</div>
+                    </div>
+                    <!--===DA DANG NHAP===-->
+                    <!-- <div class="mmMember">
+                    	<div class="iconM"><span>Vũ Văn Hải</span></div>
+                    	<div class="popupM">
+                    		<ul>
+								<li><a href="">Thông tin tài khoản</a></li>
+								<li><a href="">Đổi mật khẩu</a></li>
+								<li><a href="">Lịch sử đặt xe</a></li>
+								<li><a href="">Đăng xuất</a></li>
+							</ul>
+                    	</div>
+                    </div> -->
+                    <ul class="mmMain">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+						<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
+							<ul>
+	                    	    <li><a href="">Về chúng tôi</a></li>
+	                    	    <li><a href="">Lịch sử hình thành</a></li>
+	                    	    <li><a href="">Hồ sơ năng lực</a></li>
+	                    	    <li><a href="">Sơ đồ tổ chức</a></li>
+	                    	</ul>
+						</li>
+						<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
+						<li><a href="4_xe_moi_nhap_1.html">đặt xe</a>
+							<ul>
+								<li><a href="">Vi vu nội thành</a>
+									<ul>
+										<li><a href="">Limo 4 chỗ</a></li>
+										<li><a href="">Limo 16 chỗ</a></li>
+										<li><a href="">Limo 32 chỗ</a></li>
+										<li><a href="">Limo 50 chỗ</a></li>
+									</ul>
+								</li>
+								<li><a href="">Xe đám cưới</a>
+									<ul>
+										<li><a href="">Mex 4 chỗ</a></li>
+										<li><a href="">Mex 16 chỗ</a></li>
+										<li><a href="">Mex 32 chỗ</a></li>
+										<li><a href="">Mex 50 chỗ</a></li>
+									</ul>
+								</li>
+								<li><a href="">Xe du lịch</a></li>
+								<li><a href="">Xe đi chơi</a></li>
+							</ul>
+						</li>
+						<li><a href="5_cam_nhan_1.html">CẢM NHẬN</a></li>
+						<li><a href="6_tin_tuc_1.html">TIN TỨC</a></li>
+						<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
+						<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <div class="mmSearch">
+                        <form name="formSearch" method="post" action="">
+                            <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">
+                            <button name="btn-search" type="submit" value=""><img src="images/i-search.png" alt="" /></button>
+                            <input name="do_search" value="1" type="hidden">
+                        </form>
+                    </div>
+                    <div class="mmLanguage">
+                        <ul>
+                            <li><a href="">en</a></li>
+                            <li><a href="">vn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divmmbg"></div>
+        </div>
+    </div>
+    <!--==END: MENU_MOBILE_NAV==-->
+</body>
+</html>

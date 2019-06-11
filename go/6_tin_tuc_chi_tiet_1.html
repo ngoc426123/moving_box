@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MOVING BOX</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="js/menumobile/menumobile.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/menumobile/menumobile.js"></script>
+	<script src="js/style.js" type="text/javascript"></script>
+	<!--===MODULE===-->
+	<link rel="stylesheet" href="style/news.css">
+	<!--===MODULE===--->
+</head>
+<body>
+	<div id="mvb-container">
+		<!--===BEGIN : HEADER===-->
+		<div id="mvb-header">
+			<div class="mainHead">
+				<div class="wrapper">
+					<div class="logo"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<div class="header-tools hidden-sm hidden-xs">
+						<div class="row-tools mb">
+							<div class="languageTop">
+								<div class="icon"><span>Ngôn ngữ</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href=""><img src="images/flag-vn.svg" alt=""><span>Tiếng Việt</span></a></li>
+										<li><a href=""><img src="images/flag-en.svg" alt=""><span>Tiếng Anh</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="emailTop"><a href=""><span>Đăng ký mail</span></a></div>
+							<!--===CHUA DANG NHAP===-->
+							<div class="memberTop">
+								<div class="icon"><span>Tài khoản</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href="10_form_dang_ky_1.html">Đăng ký thành viên</a></li>
+										<li><a href="10_form_dang_nhap_1.html">Đăng nhập thành viên</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--===DA DANG NHAP===-->
+							<!-- <div class="memberTop">
+								<div class="icon"><span>Vũ Văn Hải</span></div>
+								<div class="popup">
+									<ul>
+										<li><a href="">Thông tin tài khoản</a></li>
+										<li><a href="">Đổi mật khẩu</a></li>
+										<li><a href="">Lịch sử đặt xe</a></li>
+										<li><a href="">Đăng xuất</a></li>
+									</ul>
+								</div>
+							</div> -->
+							<div class="hotlineTop">
+								<div class="txt">Liên hệ</div>
+								<a href="tel:0522.927.508"><span>0522.927.508</span></a>
+							</div>
+						</div>
+						<div class="row-tools">
+							<div class="menuTop">
+								<ul>
+									<li><a href="index.html">TRANG CHỦ</a></li>
+									<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
+										<ul>
+				                    	    <li><a href="">Về chúng tôi</a></li>
+				                    	    <li><a href="">Lịch sử hình thành</a></li>
+				                    	    <li><a href="">Hồ sơ năng lực</a></li>
+				                    	    <li><a href="">Sơ đồ tổ chức</a></li>
+				                    	</ul>
+									</li>
+									<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
+									<li><a href="4_xe_moi_nhap_1.html">đặt xe</a>
+										<ul>
+											<li><a href="">Vi vu nội thành</a>
+												<ul>
+													<li><a href="">Limo 4 chỗ</a></li>
+													<li><a href="">Limo 16 chỗ</a></li>
+													<li><a href="">Limo 32 chỗ</a></li>
+													<li><a href="">Limo 50 chỗ</a></li>
+												</ul>
+											</li>
+											<li><a href="">Xe đám cưới</a>
+												<ul>
+													<li><a href="">Mex 4 chỗ</a></li>
+													<li><a href="">Mex 16 chỗ</a></li>
+													<li><a href="">Mex 32 chỗ</a></li>
+													<li><a href="">Mex 50 chỗ</a></li>
+												</ul>
+											</li>
+											<li><a href="">Xe du lịch</a></li>
+											<li><a href="">Xe đi chơi</a></li>
+										</ul>
+									</li>
+									<li><a href="5_cam_nhan_1.html">CẢM NHẬN</a></li>
+									<li class="current"><a href="6_tin_tuc_1.html">TIN TỨC</a></li>
+									<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
+									<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
+								</ul>
+							</div>
+							<div class="searchTop">
+                                <div class="icon"><img src="images/i-search.svg" alt=""></div>
+                                <div class="popup">
+                                    <div class="wrapper">
+                                        <form name="formSearch" method="post" action="" class="box_search">
+                                            <input name="keyword" type="text" class="text_search">
+                                            <span class="place">Nhập từ khóa tìm kiếm</span>
+                                            <input name="do_search" value="1" type="hidden">
+                                        </form>
+                                    </div>
+                                    <div class="closez"><img src="images/i-close.svg" alt=""></div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="header-tools hidden-lg hidden-md">
+                        <div class="menu_mobile">
+                            <div class="icon"><span class="style_icon"></span></div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--===END : HEADER===-->
+		<!--===BEGIN : CONTENT===-->
+		<div id="mvb-content">
+			<!--===MAIN TOP===-->
+			<div class="mvb-main-top">
+				<!--===slide page===-->
+				<div id="slidePage" class="slick-init">
+					<div class="item"><div class="img" style="background-image: url(images/about/slide.jpg);"></div></div>
+					<div class="item"><div class="img" style="background-image: url(images/about/slide.jpg);"></div></div>
+				</div>
+				<!--===BREADCRUMB===-->
+				<div class="breadcrumb hidden-sm hidden-xs">
+                    <div class="wrapper">
+                    	<div class="navation">
+                    	    <ul>
+                    	        <li><a><span>Trang chủ</span></a></li>
+                    	        <li><a><span>Giới thiệu</span></a></li>
+                    	        <li><a><span>Về chúng tôi</span></a></li>
+                    	    </ul>
+                    	</div>
+                    </div>
+                </div>
+                <!--===MENU TAB===-->
+                <div class="menuTab">
+                    <div class="wrapper">
+                    	<div class="mc-menu hidden-lg hidden-md">Chọn menu</div>
+                    	<ul>
+                    	    <li class="current"><a href="">Tin tức chung</a></li>
+                    	    <li><a href="">tin chuyên ngành</a></li>
+                    	    <li><a href="">tin khuyến mãi</a></li>
+                    	    <li><a href="">tin tuyển dụng</a></li>
+                    	</ul>
+                    </div>
+                </div>
+			</div>
+			<!--===MAIN CONTENT===-->
+			<div class="wrapCont">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+							<div class="box">
+								<div class="box-title">
+									<h1 class="fTitle">những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</h1>
+									<div class="the-date"><span>13:00  | 10/03/2019 </span></div>
+								</div>
+								<div class="box-content">
+									<div class="the-content desc">
+										<p>Không nóng bức và oi ả như mùa hạ, cũng không lạnh lẽo như mùa đông, có lẽ mùa thu là mùa được nhiều người yêu thích nhất. Thời tiết mùa thu mát mẻ, không khí trong lành rất thuận tiện cho việc đi lại và tham quan du lịch.</p>
+										<p>ELLE xin gợi ý một vài địa điểm du lịch hấp dẫn mùa Thu-Đông:</p>
+										<p>Du lịch Hà Giang mùa thu ngắm hoa tam giác mạch</p>
+										<p>Hoa tam giác mạch một năm nở hai mùa, có nhiều ở Cao Bằng, Lào Cai và Hà Giang trong đó vào giữa tháng 10 là mùa hoa tam giác mạch nở rộ nhất ở Hà Giang. Du lịch Hà Giang vào thời điểm này bạn sẽ được chiêm ngưỡng những đồi hoa tam giác mạch phủ một màu tím phớt tuyệt đẹp.</p>
+										<p>Từ Hà Nội các bạn có thể di chuyển bằng xe khách hoặc xe máy tới Hà Giang, theo kinh nghiệm du lịch Hà Giang mùa hoa tam giác mạch thú vị, các bạn nên đi bằng xe máy có thể tự do khám phá và chiêm ngưỡng khung cảnh tuyệt đẹp nơi đây. Tuy nhiên, các bạn cũng có thể thuê xe máy, vì ở đây có nhiều nhà cho thuê xe máy, giá thuê xe khoảng 200.000 – 250.000/ngày.</p>
+										<p class="text-center">
+											<img src="images/news/img1.jpg" alt="">
+										</p>
+										<p>Hoa tam giác mạch ở Hà Giang tập trung nhiều ở khu vực Cung Đồng Văn – Mèo Vạc, cung Xí Mần – Hoàng Phu Sì. Thông thường các bạn sẽ mất khoảng 10.000 đồng mỗi người để vào chụp ảnh với hoa. Lưu ý khi vào các vườn tam giác mạch, tuyệt đối không giẫm vào các vạt hoa, xin phép người chủ vườn nếu họ có ở đó và đừng quên nhặt sạch rác trước khi ra về.</p>
+										<p>Khám phá Sapa mùa cuối thu</p>
+										<p>Từ Hà Nội tới Sapa các bạn có thể di chuyển bằng xe máy, tàu hỏa hoặc xe khách, để có thể tham quan được hết những điểm du lịch hấp dẫn và đẹp nhất ở Sapa các bạn nên du lịch Sapa 3 ngày 2 đêm để có thể trải nghiệm và khám phá được hết vùng đất tuyệt đẹp này.</p>
+										<p>Du lịch Sapa mùa thu bạn sẽ được chiêm ngưỡng những thửa ruộng lúa chín vàng uốn quanh triền đồi hùng vĩ, đẹp tráng lệ. Vào thời gian này du khách tới Sapa thường để chiêm ngưỡng mùa lúa chín vàng và chụp ảnh lưu giữ những khoảnh khắc tuyệt đẹp này.</p>
+										<p>Tới Sapa không thể bỏ qua chợ phiên và thưởng thức những món ăn ngon nổi tiếng ở Sapa như thắng cố, xiên nướng, rượu cần. Ngắm sương mù trên đỉnh Hàm Rồng, tham quan thác Bạc, đèo Ô Quy Hồ, thung lũng Mường Hoa,…</p>
+										<p class="text-center">
+											<img src="images/news/img2.jpg" alt="">
+										</p>
+									</div>
+									<div class="myTags">
+			                            <p>Tags :</p>
+			                            <ul class="list-inline text-left">
+			                                <li><a href="#">Inspiration</a></li>
+			                                <li><a href="#">Workspace</a></li>
+			                                <li><a href="#">Minimal</a></li>
+			                                <li><a href="#">Decoation</a></li>
+			                            </ul>
+			                        </div>
+			                        <div class="myTools">
+			                            <div class="share">
+			                                <ul>
+			                                    <li><a href="#"><img src="images/like_face.png" alt=""></a></li>
+			                                    <li><a href="#"><img src="images/share_fac.png" alt=""></a></li>
+			                                    <li><a href="#"><img src="images/share_goo.png" alt=""></a></li>
+			                                    <li><a href="#"><img src="images/share_twi.png" alt=""></a></li>
+			                                </ul>
+			                                <div class="clear"></div>
+			                            </div>
+			                            <div class="print hidden-sm hidden-xs">
+			                                <ul>
+			                                    <li><a href="" class="fa-print">In bài viết</a></li>
+			                                    <li><a href="" class="fa-mail-reply-all">Quay lại</a></li>
+			                                </ul>
+			                                <div class="clear"></div>
+			                            </div>
+			                            <div class="clear"></div>
+			                        </div>
+								</div>
+							</div>
+							<div class="the-content desc">
+								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+							<div class="boxSidebar">
+								<div class="title"><h2>tin nổi bật khác</h2></div>
+								<div class="content">
+									<div class="news">
+										<div class="img"><a href="6_tin_tuc_chi_tiet_1.html"><img src="images/news/1.jpg" alt=""></a></div>
+										<div class="tend"><h3><a href="6_tin_tuc_chi_tiet_1.html">Những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</a></h3></div>
+										<div class="date"><span>10/03/2019 </span></div>
+									</div>
+									<div class="news">
+										<div class="img"><a href="6_tin_tuc_chi_tiet_1.html"><img src="images/news/2.jpg" alt=""></a></div>
+										<div class="tend"><h3><a href="6_tin_tuc_chi_tiet_1.html">Những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</a></h3></div>
+										<div class="date"><span>10/03/2019 </span></div>
+									</div>
+									<div class="news">
+										<div class="img"><a href="6_tin_tuc_chi_tiet_1.html"><img src="images/news/3.jpg" alt=""></a></div>
+										<div class="tend"><h3><a href="6_tin_tuc_chi_tiet_1.html">Những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</a></h3></div>
+										<div class="date"><span>10/03/2019 </span></div>
+									</div>
+									<div class="news">
+										<div class="img"><a href="6_tin_tuc_chi_tiet_1.html"><img src="images/news/4.jpg" alt=""></a></div>
+										<div class="tend"><h3><a href="6_tin_tuc_chi_tiet_1.html">Những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</a></h3></div>
+										<div class="date"><span>10/03/2019 </span></div>
+									</div>
+									<div class="news">
+										<div class="img"><a href="6_tin_tuc_chi_tiet_1.html"><img src="images/news/5.jpg" alt=""></a></div>
+										<div class="tend"><h3><a href="6_tin_tuc_chi_tiet_1.html">Những địa điểm du lịch đẹp nhất tháng 10 dành cho bạn</a></h3></div>
+										<div class="date"><span>10/03/2019 </span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===END : CONTENT===-->
+		<!--===BEGIN : FOOTER===-->
+		<div id="mvb-footer">
+			<div class="mainFoot">
+				<div class="wrapper">
+					<div class="logoFoot hidden-lg hidden-md hidden-sm"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<div class="addressFoot">
+						<div class="name">MOVING BOX</div>
+						<div class="be"><strong>[A]</strong>: 123 Cộng Hòa, Phương 15, Quận Tân Bình, Tp.HCM</div>
+						<div class="be"><strong>[T]</strong>: 0909 919293</div>
+						<div class="be"><strong>[E]</strong>: example@gmail.com</div>
+						<div class="be"><strong>[W]</strong>: www.movingbox.com.vn</div>
+					</div>
+					<div class="right">
+						<div class="logoFoot hidden-xs"><a href=""><img src="images/logo.png" alt=""></a></div>
+						<div class="socialFoot">
+							<ul>
+								<li><a href=""><img src="images/i-facebook.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-twitter.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-instagram.png" alt=""></a></li>
+								<li><a href=""><img src="images/i-pinterest.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="botFoot">
+				<div class="wrapper">
+					<div class="congthuongImg"><a href=""><img src="images/congthuong.png" alt=""></a></div>
+					<div class="menuCp">
+						<ul>
+							<li><a href="">Điều khoản</a></li>
+							<li><a href="">Chính sách bảo mật</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===END : FOOTER===-->
+	</div>
+	<!--==BEGIN: MENU_MOBILE_NAV==-->
+    <div class="menu_mobile">
+        <div class="divmm">
+            <div class="mmContent">
+                <div class="mmMenu">
+                	<!--===CHUA DANG NHAP===-->
+                    <div class="mmMember">
+                    	<div class="listNot">
+                    		<ul>
+                    			<li><a href="">Đăng ký</a></li>
+                    			<li><a href="">Đăng nhập</a></li>
+                    		</ul>
+                    	</div>
+                    </div>
+                    <!--===DA DANG NHAP===-->
+                    <!-- <div class="mmMember">
+                    	<div class="iconM"><span>Vũ Văn Hải</span></div>
+                    	<div class="popupM">
+                    		<ul>
+								<li><a href="">Thông tin tài khoản</a></li>
+								<li><a href="">Đổi mật khẩu</a></li>
+								<li><a href="">Lịch sử đặt xe</a></li>
+								<li><a href="">Đăng xuất</a></li>
+							</ul>
+                    	</div>
+                    </div> -->
+                    <ul class="mmMain">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+						<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
+							<ul>
+	                    	    <li><a href="">Về chúng tôi</a></li>
+	                    	    <li><a href="">Lịch sử hình thành</a></li>
+	                    	    <li><a href="">Hồ sơ năng lực</a></li>
+	                    	    <li><a href="">Sơ đồ tổ chức</a></li>
+	                    	</ul>
+						</li>
+						<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
+						<li><a href="4_xe_moi_nhap_1.html">đặt xe</a>
+							<ul>
+								<li><a href="">Vi vu nội thành</a>
+									<ul>
+										<li><a href="">Limo 4 chỗ</a></li>
+										<li><a href="">Limo 16 chỗ</a></li>
+										<li><a href="">Limo 32 chỗ</a></li>
+										<li><a href="">Limo 50 chỗ</a></li>
+									</ul>
+								</li>
+								<li><a href="">Xe đám cưới</a>
+									<ul>
+										<li><a href="">Mex 4 chỗ</a></li>
+										<li><a href="">Mex 16 chỗ</a></li>
+										<li><a href="">Mex 32 chỗ</a></li>
+										<li><a href="">Mex 50 chỗ</a></li>
+									</ul>
+								</li>
+								<li><a href="">Xe du lịch</a></li>
+								<li><a href="">Xe đi chơi</a></li>
+							</ul>
+						</li>
+						<li><a href="5_cam_nhan_1.html">CẢM NHẬN</a></li>
+						<li><a href="6_tin_tuc_1.html">TIN TỨC</a></li>
+						<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
+						<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <div class="mmSearch">
+                        <form name="formSearch" method="post" action="">
+                            <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">
+                            <button name="btn-search" type="submit" value=""><img src="images/i-search.png" alt="" /></button>
+                            <input name="do_search" value="1" type="hidden">
+                        </form>
+                    </div>
+                    <div class="mmLanguage">
+                        <ul>
+                            <li><a href="">en</a></li>
+                            <li><a href="">vn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divmmbg"></div>
+        </div>
+    </div>
+    <!--==END: MENU_MOBILE_NAV==-->
+</body>
+</html>

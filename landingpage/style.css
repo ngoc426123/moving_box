@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
+#mv-landingpage{
+	height: 100vh;
+	width: 100%;
+}
+#mv-landingpage .grid{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+#mv-landingpage .grid .col{
+	width: 50%;
+	height: 100%;
+}
+#mv-landingpage .boxMV{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#mv-landingpage .boxMV:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: inherit;
+	z-index: 1;
+	opacity: 0.75;
+}
+#mv-landingpage .boxMV .img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    transition: -webkit-transform 4s cubic-bezier(0,.6,.45,1);
+    transition: transform 4s cubic-bezier(0,.6,.45,1);
+    transition: transform 4s cubic-bezier(0,.6,.45,1), -webkit-transform 7s cubic-bezier(0,.6,.45,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#mv-landingpage .boxMV:hover .img{
+	-webkit-transform: scale(1.18);
+	-ms-transform: scale(1.18);
+	-o-transform: scale(1.18);
+	transform: scale(1.18);
+}
+#mv-landingpage .txtMV{
+	font-size: 105px;
+	line-height: 115px;
+	font-weight: 900;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#mv-landingpage .boxMV.go .txtMV{
+	right: 0;
+	-webkit-transform: translate(50%,-50%);
+	-ms-transform: translate(50%,-50%);
+	-o-transform: translate(50%,-50%);
+	transform: translate(50%,-50%);
+	color: #bd85ea;
+}
+#mv-landingpage .boxMV.go:hover .txtMV{
+	-webkit-transform: translate(100%,-50%);
+	-ms-transform: translate(100%,-50%);
+	-o-transform: translate(100%,-50%);
+	transform: translate(100%,-50%);
+}
+#mv-landingpage .boxMV.truck .txtMV{
+	left: 0;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	color: #e1ea6a;
+}
+#mv-landingpage .boxMV.truck:hover .txtMV{
+	-webkit-transform: translate(-100%,-50%);
+	-ms-transform: translate(-100%,-50%);
+	-o-transform: translate(-100%,-50%);
+	transform: translate(-100%,-50%);
+}
+#mv-landingpage .t1{
+	text-align: center;
+	font-size: 35px;
+	line-height: 45px;
+	color:#ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	z-index: 2;
+	width: 400px;
+}
+#mv-landingpage .t1 .char{
+	opacity: 0;
+}
+#mv-landingpage .boxMV:hover .t1 .char{
+	-webkit-animation: letter-fade-in 0.7s 0s ease both;
+    animation: letter-fade-in 0.7s 0s ease both;
+}
+@keyframes letter-fade-in{
+  0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
+  66%  { opacity: 0.6; text-shadow: 0px 0px 10px rgba(255,255,255,0.2) }
+  77%  { opacity: 1;  }
+  100% { opacity:1; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+}

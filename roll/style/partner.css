@@ -1,0 +1,77 @@
+.vnt-partner .grid{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	margin: 0 -10px;
+	flex-wrap: wrap;
+}
+.vnt-partner .grid .col{
+	width: 20%;
+	padding: 0 10px;
+}
+.vnt-partner a{
+	padding-top: 62.272727%;
+	display: block;
+	background: #f3f3f3;
+	position: relative;
+	margin-bottom: 20px;
+}
+.vnt-partner a img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	max-height: 85%;
+	max-width: 85%;
+	mix-blend-mode: multiply;
+}
+.linkAll{
+	text-align: center;
+}
+.linkAll a{
+	display: inline-block;
+	width: 180px;
+	background: #fafafa;
+	letter-spacing: 2.25px;
+	border:solid 1px rgba(0,0,0,0.15);
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 20px;
+}
+.linkAll a:hover{
+	background: #faed24;
+	color:#333333;
+}
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media all and (max-width: 991px){
+.vnt-partner .grid{
+	margin: 0  -5px;
+}
+.vnt-partner .grid .col{
+	padding: 0 5px;
+	width: 25%;
+}
+.vnt-partner a{
+	margin-bottom: 10px;
+}
+}
+
+@media all and (max-width: 768px){
+.vnt-partner .grid .col{
+	width: 33.333333%;
+}
+}
+
+@media all and (max-width: 640px){
+.vnt-partner .grid .col{
+	width: 50%;
+}
+}

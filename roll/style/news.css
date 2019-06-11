@@ -1,0 +1,137 @@
+/*=========================================*/
+.news{
+	margin-bottom: 30px;
+	position: relative;
+}
+.news .img{
+	padding-top: 66.666666%;
+	margin-bottom: 15px;
+	overflow: hidden;
+	position: relative;
+}
+.news:hover .img:before{
+	opacity: 0.3;
+}
+.news .img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.news:hover .img img{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.news .tend{
+	margin-bottom: 5px;
+}
+.news .tend a{
+	display: block;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bold;
+	font-weight: normal;
+	overflow: hidden;
+	height: 52px;
+}
+.news .date{
+	color:#999999;
+}
+.news .date span{
+	padding-left: 20px;
+	position: relative;
+}
+.news .date span:before{
+	content: "\f133";
+	font-family: FontAwesome;
+	position: absolute;
+	left:0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.linkAll{
+	text-align: center;
+}
+.linkAll a{
+	display: inline-block;
+	width: 180px;
+	background: #fafafa;
+	letter-spacing: 2.25px;
+	border:solid 1px rgba(0,0,0,0.15);
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 20px;
+}
+.linkAll a:hover{
+	background: #faed24;
+	color:#333333;
+}
+/*=========================================================*/
+.the-content{
+	margin-bottom: 40px;
+	text-align: justify;
+}
+.the-date{
+	color:#999999;
+	margin-top: 15px;
+}
+.the-date span{
+	padding-left: 20px;
+	position: relative;
+}
+.the-date span:before{
+	content: "\f133";
+	font-family: FontAwesome;
+	position: absolute;
+	left:0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+/*=========================================================*/
+.boxSidebar .title{
+	background: #faed24;
+	padding: 7px 15px;
+	margin-bottom: 15px;
+}
+.boxSidebar .title h2{
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.boxSidebar .news{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: solid 1px rgba(0,0,0,0.15);
+}
+.boxSidebar .news:last-child{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media all and (max-width: 640px){
+.vnt-news .row .col-xs-6{
+	width: 100%;
+}
+.news .tend a{
+	font-size: 16px;
+	line-height: 24px;
+	height: 48px;
+}
+}
