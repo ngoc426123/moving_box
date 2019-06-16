@@ -972,6 +972,9 @@ p{
 .wrapCont{
     padding-bottom: 25px;
 }
+.mvb-main-top{
+    margin-bottom: 25px;
+}
 }
 
 @media all and (max-width: 768px){
