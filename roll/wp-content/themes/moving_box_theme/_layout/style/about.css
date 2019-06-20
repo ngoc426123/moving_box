@@ -1,0 +1,110 @@
+.the-content{
+	text-align: justify;
+}
+.the-content .tt1{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	padding-bottom: 0;
+	text-align: left;
+}
+.the-content .tt2{
+	font-size: 28px;
+	line-height:36px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color:#faed24;
+	padding-bottom: 15px;
+	text-align: left;
+}
+/*================================================*/
+.templateDesign{
+	margin-top: 35px;
+}
+.templateDesign .grid{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	margin: 0 -15px;
+}
+.templateDesign .grid .col{
+	width: 25%;
+	padding: 0 15px;
+}
+.templateDesign .img{
+	text-align: center;
+}
+.templateDesign .img img{
+	max-width: 320px;
+}
+.templateDesign .item{
+	margin-bottom: 25px;
+}
+.templateDesign .item .img{
+	width: 90px;
+	height: 90px;
+	font-size: 45px;
+	line-height: 55px;
+	color:#faed24;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f5f5f5;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+.templateDesign .item .t1{
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+}
+.templateDesign .item .t1 span{
+	font-size: 35px;
+	line-height: 45px;
+	font-weight: 900;
+}
+.templateDesign .item .t2{
+	font-style: italic;
+	color:#999999;
+	text-align: center;
+}
+/*=========================================================*/
+/*==================RESPONSIVE=============================*/
+/*=========================================================*/
+@media all and (max-width: 991px){
+
+}
+
+@media all and (max-width: 767px){
+.templateDesign .grid{
+	flex-wrap: wrap;
+}
+.templateDesign .grid .col{
+	width: 50%;
+}
+.templateDesign .item .t1 span{
+	font-size: 25px;
+	line-height: 35px;
+}
+.templateDesign .item .t2{
+	font-size: 12px;
+	line-height: 20px;
+}
+.the-content .tt2{
+	font-size: 25px;
+	line-height: 35px;
+}
+}
+
+@media all and (max-width: 360px){
+.templateDesign .grid .col{
+	width: 100%;
+}
+}
