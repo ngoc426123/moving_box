@@ -4,73 +4,42 @@
 <div id="mvb-content">
 	<!---===SLIDE HOME===-->
 	<div id="slideHome" class="slick-init">
-		<div class="item">
-			<div class="img" style="background-image: url(<?php echo TEMP_DIR ?>/images/main/slide.jpg);"></div>
-			<div class="caption">
-				<div class="t1">MOVING BOX</div>
-				<div class="t2">Vận chuyển muôn nơi</div>
-				<div class="link"><a href=""><span>XEM THÊM</span></a></div>
+		<?php
+		$args = array(
+			'post_type'      => array('quanly-banner'),
+			'order'          => 'DESC',
+			'orderby'        => 'date',
+			'posts_per_page' => 5,
+			'meta_key'       => 'wpcf-bannerhome',
+			'meta_value'     => 'bannerhome',
+		);
+		$res=get_posts($args);
+		foreach ($res as $value) {
+			$img = get_the_post_thumbnail_url($value->ID);
+			$text1 = get_post_meta( $value->ID, 'wpcf-text1', $single = true );
+			$text2 = get_post_meta( $value->ID, 'wpcf-text2', $single = true );
+			$link = get_post_meta( $value->ID, 'wpcf-link', $single = true );
+		?>
+			<div class="item">
+				<div class="img" style="background-image: url(<?php echo __($img); ?>);"></div>
+				<div class="caption">
+					<div class="t1"><?php echo __($text1); ?></div>
+					<div class="t2"><?php echo __($text2); ?></div>
+					<div class="link"><a href="<?php echo __($link); ?>"><span>XEM THÊM</span></a></div>
+				</div>
 			</div>
-		</div>
-		<div class="item">
-			<div class="img" style="background-image: url(<?php echo TEMP_DIR ?>/images/main/slide.jpg);"></div>
-			<div class="caption">
-				<div class="t1">MOVING BOX</div>
-				<div class="t2">Vận chuyển muôn nơi</div>
-				<div class="link"><a href=""><span>XEM THÊM</span></a></div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="img" style="background-image: url(<?php echo TEMP_DIR ?>/images/main/slide.jpg);"></div>
-			<div class="caption">
-				<div class="t1">MOVING BOX</div>
-				<div class="t2">Vận chuyển muôn nơi</div>
-				<div class="link"><a href=""><span>XEM THÊM</span></a></div>
-			</div>
-		</div>
+		<?php
+		}
+		?>
 	</div>
 	<!--===ABOUT HOME===-->
 	<div class="aboutHome">
 		<div class="wrapper">
 			<div class="title">Moving Box</div>
-			<div class="des">Với phương châm: “ Đồng hành cùng lớn mạnh” và với mức giá dịch vụ cạnh tranh, chúng tôi tin tưởng và rất hân hạnh được trở thành đối tác mới và lâu dàu của Quý khách. Chúng tôi có đội ngũ lái xe được tuyển chọn và đào tạo bài bản, chuyên nghiệp, lịch thiệp đặt trách nhiệm an toàn lên hàng đầu.</div>
-			<div class="grid">
-				<div class="col">
-					<div class="img text-center"><img src="images/main/truck.png" alt=""></div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<div class="img"><i class="fa fa-mortar-board"></i></div>
-						<div class="caption">
-							<div class="t1"><span>2019</span> năm.</div>
-							<div class="t2">Thành lập đội ngũ chuyên nghiệp.</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="img"><i class="fa fa-users"></i></div>
-						<div class="caption">
-							<div class="t1"><span>25</span> số lượng</div>
-							<div class="t2">Nhân lực đào tạo chuyên nghiệp.</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<div class="img"><i class="fa fa-binoculars"></i></div>
-						<div class="caption">
-							<div class="t1"><span>3</span> chi nhánh</div>
-							<div class="t2">khắp miền đất nước, từ bắc đến nam.</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="img"><i class="fa fa-cubes"></i></div>
-						<div class="caption">
-							<div class="t1"><span>15</span> dịch vụ</div>
-							<div class="t2">Cung ứng đầy đủ, phục vụ nhiệt tâm.</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+			$res=get_post(18);
+			echo $res->post_content;
+			?>
 			<div class="linkAll text-center"><a href=""><span>xem thêm</span></a></div>
 		</div>		
 	</div>

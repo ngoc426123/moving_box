@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>MOVING BOX</title>
+	<title><?php echo __(HOME_TITLE); ?></title>
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -22,15 +22,15 @@
 					$res=get_posts($args);
 					$logo=get_the_post_thumbnail_url($res[0]->ID,'full');
 					?>
-					<div class="logo"><a href=""><img src="<?php echo $logo; ?>" alt=""></a></div>
+					<div class="logo"><a href="<?php echo __(HOME_URL); ?>"><img src="<?php echo __($logo); ?>" alt=""></a></div>
 					<div class="header-tools hidden-sm hidden-xs">
 						<div class="row-tools mb">
 							<div class="languageTop">
 								<div class="icon"><span>Ngôn ngữ</span></div>
 								<div class="popup">
 									<ul>
-										<li><a href=""><img src="<?php echo TEMP_DIR ?>/images/flag-vn.svg" alt=""><span>Tiếng Việt</span></a></li>
-										<li><a href=""><img src="<?php echo TEMP_DIR ?>/images/flag-en.svg" alt=""><span>Tiếng Anh</span></a></li>
+										<li><a href=""><img src="<?php echo __(TEMP_DIR) ?>/images/flag-vn.svg" alt=""><span>Tiếng Việt</span></a></li>
+										<li><a href=""><img src="<?php echo __(TEMP_DIR) ?>/images/flag-en.svg" alt=""><span>Tiếng Anh</span></a></li>
 									</ul>
 								</div>
 							</div>
@@ -57,7 +57,7 @@
 								</ul>
 							</div>
 							<div class="searchTop">
-                                <div class="icon"><img src="<?php echo TEMP_DIR ?>/images/i-search.svg" alt=""></div>
+                                <div class="icon"><img src="<?php echo __(TEMP_DIR) ?>/images/i-search.svg" alt=""></div>
                                 <div class="popup">
                                     <div class="wrapper">
                                         <form name="formSearch" method="post" action="" class="box_search">
@@ -66,7 +66,7 @@
                                             <input name="do_search" value="1" type="hidden">
                                         </form>
                                     </div>
-                                    <div class="closez"><img src="<?php echo TEMP_DIR ?>/images/i-close.svg" alt=""></div>
+                                    <div class="closez"><img src="<?php echo __(TEMP_DIR) ?>/images/i-close.svg" alt=""></div>
                                 </div>
                             </div>
 						</div>

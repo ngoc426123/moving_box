@@ -2,22 +2,44 @@
 		<div id="mvb-footer">
 			<div class="mainFoot">
 				<div class="wrapper">
-					<div class="logoFoot hidden-lg hidden-md hidden-sm"><a href=""><img src="images/logo.png" alt=""></a></div>
+					<?php
+					$args = array(
+						'post_type'      => 'quanly-logo',
+						'order'          => 'DESC',
+						'orderby'        => 'date',
+						'posts_per_page' => 1,
+					);
+					$res=get_posts($args);
+					$logo=get_the_post_thumbnail_url($res[0]->ID,'full');
+					?>
+					<div class="logoFoot hidden-lg hidden-md hidden-sm"><a href=""><img src="<?php echo __($logo); ?>" alt=""></a></div>
 					<div class="addressFoot">
-						<div class="name">MOVING BOX</div>
-						<div class="be"><strong>[A]</strong>: 123 Cộng Hòa, Phương 15, Quận Tân Bình, Tp.HCM</div>
-						<div class="be"><strong>[T]</strong>: 0909 919293</div>
-						<div class="be"><strong>[E]</strong>: example@gmail.com</div>
-						<div class="be"><strong>[W]</strong>: www.movingbox.com.vn</div>
+						<?php
+						$args = array(
+							'post_type'      => array('quanly-lienhe'),
+							'order'          => 'DESC',
+							'posts_per_page' => 1,
+						);
+						$res=get_posts($args);
+						$diachi = get_post_meta( $res[0]->ID, 'wpcf-dia-chi', $single = true );
+						$sodienthoai = get_post_meta( $res[0]->ID, 'wpcf-so-dien-thoai', $single = true );
+						$email = get_post_meta( $res[0]->ID, 'wpcf-email', $single = true );
+						$website = get_post_meta( $res[0]->ID, 'wpcf-website', $single = true );
+						?>
+						<div class="name"><?php echo __($res[0]->post_title); ?></div>
+						<div class="be"><strong>[A]</strong>: <?php echo __($diachi); ?></div>
+						<div class="be"><strong>[T]</strong>: <?php echo __($sodienthoai); ?></div>
+						<div class="be"><strong>[E]</strong>: <?php echo __($email); ?></div>
+						<div class="be"><strong>[W]</strong>: <?php echo __($website); ?></div>
 					</div>
 					<div class="right">
-						<div class="logoFoot hidden-xs"><a href=""><img src="images/logo.png" alt=""></a></div>
+						<div class="logoFoot hidden-xs"><a href=""><img src="<?php echo __($logo); ?>" alt=""></a></div>
 						<div class="socialFoot">
 							<ul>
-								<li><a href=""><img src="images/i-facebook.png" alt=""></a></li>
-								<li><a href=""><img src="images/i-twitter.png" alt=""></a></li>
-								<li><a href=""><img src="images/i-instagram.png" alt=""></a></li>
-								<li><a href=""><img src="images/i-pinterest.png" alt=""></a></li>
+								<li><a href=""><img src="<?php echo __(TEMP_DIR); ?>/images/i-facebook.png" alt=""></a></li>
+								<li><a href=""><img src="<?php echo __(TEMP_DIR); ?>/images/i-twitter.png" alt=""></a></li>
+								<li><a href=""><img src="<?php echo __(TEMP_DIR); ?>/images/i-instagram.png" alt=""></a></li>
+								<li><a href=""><img src="<?php echo __(TEMP_DIR); ?>/images/i-pinterest.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -25,7 +47,7 @@
 			</div>
 			<div class="botFoot">
 				<div class="wrapper">
-					<div class="congthuongImg"><a href=""><img src="images/congthuong.png" alt=""></a></div>
+					<div class="congthuongImg"><a href="<?php echo __(HOME_URL); ?>"><img src="<?php echo __(TEMP_DIR); ?>/images/congthuong.png" alt=""></a></div>
 					<div class="menuCp">
 						<ul>
 							<li><a href="">Điều khoản</a></li>
