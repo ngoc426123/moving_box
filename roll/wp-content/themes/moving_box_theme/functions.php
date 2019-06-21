@@ -2,11 +2,17 @@
 require_once("functions/post-type-quanlylogo.php");
 require_once("functions/post-type-quanlylienhe.php");
 require_once("functions/post-type-quanlybanner.php");
+require_once("functions/post-type-quanlydichvu.php");
+require_once("functions/post-type-quanlydoitac.php");
 define(TEMP_DIR, get_template_directory_uri());
 define(HOME_URL, home_url());
 define(HOME_TITLE, get_bloginfo('name'));
 add_filter('show_admin_bar', '__return_false');
 add_theme_support( 'post-thumbnails' );
+function register_my_menu() {
+  register_nav_menu('new-menu',__( 'New Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////                                               /////////////////        
 ///                        ADD CSS AND JS FOR STYLE                           /// 
@@ -32,7 +38,8 @@ function movingbox_styles(){
     wp_enqueue_script('mvbScript-style', TEMP_DIR.'/js/style.js');
     // MAIN
     if(is_home()){
-        wp_enqueue_style('mvbStyle-module', TEMP_DIR.'/style/main.css','all' );
+        wp_enqueue_style('mvbStyle-module-service', TEMP_DIR.'/style/service.css','all' );
+        wp_enqueue_style('mvbStyle-module-main', TEMP_DIR.'/style/main.css','all' );
         wp_enqueue_script('mvbScript-module', TEMP_DIR.'/js/main/main.js');
     }
 }
@@ -40,8 +47,9 @@ add_action('wp_enqueue_scripts', 'movingbox_styles');
 function remove_menus() {
     remove_menu_page( 'jetpack' );                    //Jetpack* 
     remove_menu_page( 'edit.php' );                   //Posts
-    remove_menu_page( 'upload.php' );                 //Media
     remove_menu_page( 'edit-comments.php' );          //Comments
+    remove_menu_page( 'plugins.php' );                //Plugins
+    remove_menu_page( 'tools.php' );                  //Tools
 }
 add_action('admin_menu','remove_menus');
 

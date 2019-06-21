@@ -41,20 +41,9 @@
 						</div>
 						<div class="row-tools">
 							<div class="menuTop">
-								<ul>
-									<li class="current"><a href="index.html">TRANG CHỦ</a></li>
-									<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
-										<ul>
-				                    	    <li><a href="">Về chúng tôi</a></li>
-				                    	    <li><a href="">Lịch sử hình thành</a></li>
-				                    	    <li><a href="">Hồ sơ năng lực</a></li>
-				                    	    <li><a href="">Sơ đồ tổ chức</a></li>
-				                    	</ul>
-									</li>
-									<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
-									<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
-									<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
-								</ul>
+								<?php
+								wp_nav_menu();
+								?>
 							</div>
 							<div class="searchTop">
                                 <div class="icon"><img src="<?php echo __(TEMP_DIR) ?>/images/i-search.svg" alt=""></div>
