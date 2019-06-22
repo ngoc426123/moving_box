@@ -42,6 +42,13 @@ function movingbox_styles(){
         wp_enqueue_style('mvbStyle-module-main', TEMP_DIR.'/style/main.css','all' );
         wp_enqueue_script('mvbScript-module', TEMP_DIR.'/js/main/main.js');
     }
+    elseif (is_page('gioi-thieu')) {
+        wp_enqueue_style('mvbStyle-module-about', TEMP_DIR.'/style/about.css','all' );
+    }
+    elseif(is_post_type_archive('quanly-dichvu') OR is_singular('quanly-dichvu')){
+        wp_enqueue_style('mvbStyle-module-service', TEMP_DIR.'/style/service.css','all' );
+        wp_enqueue_script('mvbScript-module-service', TEMP_DIR.'/js/service/service.js');
+    }
 }
 add_action('wp_enqueue_scripts', 'movingbox_styles');
 function remove_menus() {
@@ -53,4 +60,9 @@ function remove_menus() {
 }
 add_action('admin_menu','remove_menus');
 
+function _p($arr){
+    echo "<pre>";
+    print_r($arr);
+    echo "</pre>";
+}
 ?>

@@ -81,7 +81,7 @@
                     <div class="mmSearch">
                         <form name="formSearch" method="post" action="">
                             <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">
-                            <button name="btn-search" type="submit" value=""><img src="images/i-search.png" alt="" /></button>
+                            <button name="btn-search" type="submit" value=""><img src="<?php echo __(TEMP_DIR); ?>/images/i-search.svg" alt="" /></button>
                             <input name="do_search" value="1" type="hidden">
                         </form>
                     </div>

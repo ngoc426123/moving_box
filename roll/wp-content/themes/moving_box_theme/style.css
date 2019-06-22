@@ -565,7 +565,7 @@ p{
     display: block;
 }
 .breadcrumb ul li a:hover {
-    color: #810007
+    color: #faed24;
 }
 .breadcrumb ul li:after {
     content: "/";

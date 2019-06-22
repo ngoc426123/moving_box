@@ -110,12 +110,4 @@ $(document).ready(function(){
         type : 1,
         show_position: 'right'
     });
-    $(".mmMember .iconM").click(function(){
-        if(!$(this).parents(".mmMember").hasClass("active")){
-            $(this).parents(".mmMember").addClass("active");
-        }
-        else{
-            $(this).parents(".mmMember").removeClass("active");
-        }
-    });
 });

@@ -4,7 +4,7 @@
 ///                        MANAGER BANNEE                                     /// 
 /////////////////                                               /////////////////
 $label = array(
-    'name' => 'Quản lý dịch vụ', 
+    'name' => 'Dịch vụ', 
     'singular_name' => 'dịch vụ website', 
     'add_new' => 'Thêm mới', 
     'add_new_item' => 'Thêm mới dịch vụ', 
