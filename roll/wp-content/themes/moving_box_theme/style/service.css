@@ -156,6 +156,7 @@
 	padding: 10px;
 }
 .designPopup .fancybox-slide--iframe .fancybox-content{
+	width: 95%;
 	max-width: 768px;
 }
 .designPopup button[data-fancybox-close]{
@@ -174,6 +175,34 @@
 	text-align: center;
 	margin-bottom: 45px;
 }
+#mvb-popup.success{
+	padding: 25px 10px;
+	text-align: center;
+}
+#mvb-popup.success .t1{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #e20000;
+	margin-bottom: 5px;
+}
+#mvb-popup.success .icon{
+	font-size: 70px;
+	line-height: 80px;
+	color: #4CAF50;
+	margin-bottom: 10px;
+}
+#mvb-popup.success .t2 p{
+	padding: 0;
+}
+#mvb-popup.success .t2 span{
+	color:#f00;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+}
+/*===============================================*/
 .formPopup label{
 	font-weight: 900;
 }
@@ -191,9 +220,16 @@
 	resize:none;
 }
 .formPopup textarea{
-	height: 122px;
+	height: 205px;
 	padding: 10px;
 	resize: none;
+}
+.formPopup .df{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
 }
 .designButton button{
 	width: 100%;

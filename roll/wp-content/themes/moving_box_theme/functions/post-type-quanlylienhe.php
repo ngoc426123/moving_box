@@ -41,7 +41,7 @@ $arr = array(
     'show_in_menu' => true,
     'show_in_nav_menus' => true, 
     'show_in_admin_bar' => true, 
-    'menu_position' => 5, 
+    'menu_position' => 28, 
     'can_export' => true, 
     'has_archive' => true, 
     'exclude_from_search' => false, 
@@ -127,7 +127,7 @@ function custom_content_lienhe($column, $post_id){
             $email = get_post_meta($post_id,'wpcf-email',true);
             $website = get_post_meta($post_id,'wpcf-website',true);
             $info = "<p>Địa chỉ : {$diachi}</p>";
-            $info.= "<p>Sodienthoai : {$sodienthoai}</p>";
+            $info.= "<p>Số điện thoại : {$sodienthoai}</p>";
             $info.= "<p>Email : {$email}</p>";
             $info.= "<p>Website : {$website}</p>";
             echo $info;

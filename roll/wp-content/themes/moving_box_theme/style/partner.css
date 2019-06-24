@@ -1,4 +1,4 @@
-.vnt-partner .grid{
+.mvb-partner .grid{
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -7,18 +7,18 @@
 	margin: 0 -10px;
 	flex-wrap: wrap;
 }
-.vnt-partner .grid .col{
+.mvb-partner .grid .col{
 	width: 20%;
 	padding: 0 10px;
 }
-.vnt-partner a{
+.mvb-partner a{
 	padding-top: 62.272727%;
 	display: block;
 	background: #f3f3f3;
 	position: relative;
 	margin-bottom: 20px;
 }
-.vnt-partner a img{
+.mvb-partner a img{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -52,26 +52,26 @@
 /*============================RESPONSIVE====================================*/
 /*==========================================================================*/
 @media all and (max-width: 991px){
-.vnt-partner .grid{
+.mvb-partner .grid{
 	margin: 0  -5px;
 }
-.vnt-partner .grid .col{
+.mvb-partner .grid .col{
 	padding: 0 5px;
 	width: 25%;
 }
-.vnt-partner a{
+.mvb-partner a{
 	margin-bottom: 10px;
 }
 }
 
 @media all and (max-width: 768px){
-.vnt-partner .grid .col{
+.mvb-partner .grid .col{
 	width: 33.333333%;
 }
 }
 
 @media all and (max-width: 640px){
-.vnt-partner .grid .col{
+.mvb-partner .grid .col{
 	width: 50%;
 }
 }

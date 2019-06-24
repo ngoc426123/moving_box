@@ -14,31 +14,24 @@
 			<div class="box_mid">
 				<div class="mid-title">
 					<div class="titleL"><div class="txt">moving box</div></div>
-					<div class="titleR"><h1 class="title">Dịch vụ của chúng tôi</h1></div>
+					<div class="titleR"><h1 class="title">Đối tác của chúng tôi</h1></div>
 				</div>
 				<div class="mid-content">
-					<div class="mvb-service">
-						<div class="grid" id="resService">
+					<div class="mvb-partner">
+						<div class="grid" id="resPartner">
 						<?php
 						$args = array(
-							'post_type'      => array('quanly-dichvu'),
+							'post_type'      => array('quanly-doitac'),
 							'order'          => 'DESC',
 							'orderby'        => 'date',
-							'posts_per_page' => 6,
+							'posts_per_page' => 10,
 						);
 						$res=get_posts($args);
 						foreach ($res as $value) {
 							$img = get_the_post_thumbnail_url($value->ID);
-							$link = get_permalink($value->ID)
+							$link = get_post_meta( $value->ID,'wpcf-link', true );
 						?>
-							<div class="col">
-								<div class="service">
-									<div class="img"><a href="<?php echo __($link); ?>"><img src="<?php echo __($img); ?>" alt=""></a></div>
-									<div class="caption">
-										<div class="tend"><h3><a href="<?php echo __($link); ?>"><?php echo __($value->post_title) ?></a></h3></div>
-									</div>
-								</div>
-							</div>
+							<div class="col"><a href="<?php echo __($link); ?>"><img src="<?php echo __($img); ?>" alt=""></a></div>
 						<?php
 						}
 						?>

@@ -16,11 +16,8 @@
 				<div class="box-content">
 					<div class="the-content desc">
 						<?php echo __($post->post_content); ?>
-						<div class="boxRegis">
-							<div class="t1">Bạn muốn chúng tôi tư vấn giúp bạn</div>
-							<div class="linkPopup"><a href="popup.html"><span>Click vào để gởi câu hỏi</span></a></div>
-							<div class="t2">hoặc gọi cho chúng tôi qua số <span>0909 919293</span></div>
-						</div>
+						<?php /*get_template_part('content/content-boxregis')*/ ?>
+                        <?php echo do_shortcode('[movingbox_boxregis]') ?>
 					</div>
 					<div class="myTags">
                         <p>Tags :</p>
