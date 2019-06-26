@@ -64,20 +64,13 @@
         <div class="divmm">
             <div class="mmContent">
                 <div class="mmMenu">
-                    <ul class="mmMain">
-                        <li><a href="index.html">TRANG CHỦ</a></li>
-						<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
-							<ul>
-	                    	    <li><a href="">Về chúng tôi</a></li>
-	                    	    <li><a href="">Lịch sử hình thành</a></li>
-	                    	    <li><a href="">Hồ sơ năng lực</a></li>
-	                    	    <li><a href="">Sơ đồ tổ chức</a></li>
-	                    	</ul>
-						</li>
-						<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
-						<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
-						<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
-                    </ul>
+                	<?php
+					wp_nav_menu(array(
+						'menu_class'      => 'mmMain',
+						'container'       => '<div>',
+						'container_class' => 'mmMenu',
+					));
+					?>
                     <div class="mmSearch">
                         <form name="formSearch" method="post" action="">
                             <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">
