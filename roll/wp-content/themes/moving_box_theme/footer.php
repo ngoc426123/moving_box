@@ -50,8 +50,8 @@
 					<div class="congthuongImg"><a href="<?php echo __(HOME_URL); ?>"><img src="<?php echo __(TEMP_DIR); ?>/images/congthuong.png" alt=""></a></div>
 					<div class="menuCp">
 						<ul>
-							<li><a href="">Điều khoản</a></li>
-							<li><a href="">Chính sách bảo mật</a></li>
+							<li><a href=""><?php echo __($GLOBALS['lang']['menu']['rules']); ?></a></li>
+							<li><a href=""><?php echo __($GLOBALS['lang']['menu']['policy']); ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -64,13 +64,13 @@
         <div class="divmm">
             <div class="mmContent">
                 <div class="mmMenu">
-                	<?php
-					wp_nav_menu(array(
-						'menu_class'      => 'mmMain',
-						'container'       => '<div>',
-						'container_class' => 'mmMenu',
-					));
-					?>
+					<ul class="mmMenu">
+						<li><a href="<?php echo __(HOME_URL); ?>"><?php echo __($GLOBALS['lang']['menu']['home']); ?></a></li>
+						<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-gioi-thieu'))); ?>"><?php echo __($GLOBALS['lang']['menu']['about']); ?></a></li>
+						<li><a href="<?php echo __(get_post_type_archive_link("quanly-dichvu")); ?>"><?php echo __($GLOBALS['lang']['menu']['service']); ?></a></li>
+						<li><a href="<?php echo __(get_post_type_archive_link("quanly-doitac")); ?>"><?php echo __($GLOBALS['lang']['menu']['partner']); ?></a></li>
+						<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-lien-he'))); ?>"><?php echo __($GLOBALS['lang']['menu']['contact']); ?></a></li>
+					</ul>
                     <div class="mmSearch">
                         <form name="formSearch" method="post" action="">
                             <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">

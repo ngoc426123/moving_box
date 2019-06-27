@@ -1,3 +1,4 @@
+<?php require_once("languages/".pll_current_language('slug').".php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,24 +27,31 @@
 					<div class="header-tools hidden-sm hidden-xs">
 						<div class="row-tools mb">
 							<div class="languageTop">
-								<div class="icon"><span>Ngôn ngữ</span></div>
+								<div class="icon"><span><?php echo __($GLOBALS['lang']['language']); ?></span></div>
 								<div class="popup">
 									<ul>
-										<li><a href=""><img src="<?php echo __(TEMP_DIR) ?>/images/flag-vn.svg" alt=""><span>Tiếng Việt</span></a></li>
-										<li><a href=""><img src="<?php echo __(TEMP_DIR) ?>/images/flag-en.svg" alt=""><span>Tiếng Anh</span></a></li>
+										<?php 
+										pll_the_languages(array(
+											'show_flags' => 1,
+										));
+										?>
 									</ul>
 								</div>
 							</div>
 							<div class="hotlineTop">
-								<div class="txt">Liên hệ</div>
+								<div class="txt"><?php echo __($GLOBALS['lang']['menu']['contact']); ?></div>
 								<a href="tel:0522.927.508"><span>0522.927.508</span></a>
 							</div>
 						</div>
 						<div class="row-tools">
 							<div class="menuTop">
-								<?php
-								wp_nav_menu();
-								?>
+								<ul>
+									<li><a href="<?php echo __(HOME_URL); ?>"><?php echo __($GLOBALS['lang']['menu']['home']); ?></a></li>
+									<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-gioi-thieu'))); ?>"><?php echo __($GLOBALS['lang']['menu']['about']); ?></a></li>
+									<li><a href="<?php echo __(get_post_type_archive_link("quanly-dichvu")); ?>"><?php echo __($GLOBALS['lang']['menu']['service']); ?></a></li>
+									<li><a href="<?php echo __(get_post_type_archive_link("quanly-doitac")); ?>"><?php echo __($GLOBALS['lang']['menu']['partner']); ?></a></li>
+									<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-lien-he'))); ?>"><?php echo __($GLOBALS['lang']['menu']['contact']); ?></a></li>
+								</ul>
 							</div>
 							<div class="searchTop">
                                 <div class="icon"><img src="<?php echo __(TEMP_DIR) ?>/images/i-search.svg" alt=""></div>
@@ -51,7 +59,7 @@
                                     <div class="wrapper">
                                         <form name="formSearch" method="post" action="" class="box_search">
                                             <input name="keyword" type="text" class="text_search">
-                                            <span class="place">Nhập từ khóa tìm kiếm</span>
+                                            <span class="place"><?php echo __($GLOBALS['lang']['placeholder_text_search']); ?></span>
                                             <input name="do_search" value="1" type="hidden">
                                         </form>
                                     </div>

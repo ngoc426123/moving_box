@@ -1,24 +1,14 @@
 <?php
-require_once("functions/post-type-quanlylogo.php");
-require_once("functions/post-type-quanlylienhe.php");
-require_once("functions/post-type-quanlybanner.php");
-require_once("functions/post-type-quanlydichvu.php");
-require_once("functions/post-type-quanlydoitac.php");
-require_once("functions/post-type-quanlytuvan.php");
+define(TEMP_DIR, get_template_directory_uri());
+define(HOME_URL, pll_home_url());
+define(HOME_TITLE, get_bloginfo('name'));
+add_filter('show_admin_bar', '__return_false');
+add_theme_support('post-thumbnails');
 function _p($arr){
     echo "<pre>";
     print_r($arr);
     echo "</pre>";
 }
-define(TEMP_DIR, get_template_directory_uri());
-define(HOME_URL, home_url());
-define(HOME_TITLE, get_bloginfo('name'));
-add_filter('show_admin_bar', '__return_false');
-add_theme_support( 'post-thumbnails' );
-function register_my_menu() {
-  register_nav_menu('new-menu',__( 'New Menu' ));
-}
-add_action( 'init', 'register_my_menu' );
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////                                               /////////////////        
 ///                        ADD CSS AND JS FOR STYLE                           /// 
@@ -81,7 +71,7 @@ function remove_menus() {
     remove_menu_page( 'jetpack' );                    //Jetpack* 
     remove_menu_page( 'edit.php' );                   //Posts
     remove_menu_page( 'edit-comments.php' );          //Comments
-    remove_menu_page( 'plugins.php' );                //Plugins
+    // remove_menu_page( 'plugins.php' );                //Plugins
     remove_menu_page( 'tools.php' );                  //Tools
 }
 add_action('admin_menu','remove_menus');
@@ -155,6 +145,7 @@ function movingbox_shortcode_boxregis(){
             </div>";
 }
 add_shortcode('movingbox_boxregis','movingbox_shortcode_boxregis');
+/////////////////////////////////////////////////////////////////////////////////
 /////////////////                                               /////////////////
 ///                        EVENT FORM TU VAN                                  /// 
 /////////////////                                               /////////////////
@@ -183,7 +174,16 @@ function form_post_tuvan() {
         $err = "Có lỗi Xẩy ra !!!";
         wp_redirect(get_permalink(get_page_by_path('popup-tu-van')));
     }
-    
     die();
 }
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////                                               /////////////////
+///                        IMPORT                                             /// 
+/////////////////                                               /////////////////
+require_once("functions/post-type-quanlylogo.php");
+require_once("functions/post-type-quanlylienhe.php");
+require_once("functions/post-type-quanlybanner.php");
+require_once("functions/post-type-quanlydichvu.php");
+require_once("functions/post-type-quanlydoitac.php");
+require_once("functions/post-type-quanlytuvan.php");
 ?>

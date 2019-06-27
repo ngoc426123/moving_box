@@ -37,7 +37,7 @@
 				<div class="caption">
 					<div class="t1"><?php echo __($text1); ?></div>
 					<div class="t2"><?php echo __($text2); ?></div>
-					<div class="link"><a href="<?php echo __($link); ?>"><span>XEM THÊM</span></a></div>
+					<div class="link"><a href="<?php echo __($link); ?>"><span><?php echo __($GLOBALS['lang']['read_more']); ?></span></a></div>
 				</div>
 			</div>
 		<?php
