@@ -64,6 +64,7 @@
         <div class="divmm">
             <div class="mmContent">
                 <div class="mmMenu">
+<<<<<<< HEAD
 					<ul class="mmMenu">
 						<li><a href="<?php echo __(HOME_URL); ?>"><?php echo pll__("menu-home"); ?></a></li>
 						<li><a href="<?php echo __(get_permalink(get_page_by_path('page-gioi-thieu'))); ?>"><?php echo pll__("menu-about"); ?></a></li>
@@ -71,6 +72,22 @@
 						<li><a href="<?php echo __(get_post_type_archive_link("quanly-doitac")); ?>"><?php echo pll__("menu-partner"); ?></a></li>
 						<li><a href="<?php echo __(get_permalink(get_page_by_path('page-lien-he'))); ?>"><?php echo pll__("menu-contact"); ?></a></li>
 					</ul>
+=======
+                    <ul class="mmMain">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+						<li><a href="2_gioi_thieu_1.html">GIỚI THIỆU</a>
+							<ul>
+	                    	    <li><a href="">Về chúng tôi</a></li>
+	                    	    <li><a href="">Lịch sử hình thành</a></li>
+	                    	    <li><a href="">Hồ sơ năng lực</a></li>
+	                    	    <li><a href="">Sơ đồ tổ chức</a></li>
+	                    	</ul>
+						</li>
+						<li><a href="3_dich_vu_1.html">DỊCH VỤ</a></li>
+						<li><a href="7_doi_tac_1.html">ĐỐI TÁC</a></li>
+						<li><a href="8_lien_he_1.html">LIÊN HỆ</a></li>
+                    </ul>
+>>>>>>> parent of ada1a69... 11h48 26/06/2019
                     <div class="mmSearch">
                         <form name="formSearch" method="post" action="">
                             <input name="keyword" type="text" value="" placeholder="Nhập từ khóa tìm kiếm...">

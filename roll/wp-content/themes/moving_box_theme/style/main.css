@@ -6,22 +6,7 @@
 	background-position: center;
 	position: relative;
 }
-#slideHome .video{
-	height: 100vh;
-	position: relative;
-}
-#slideHome .video video{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-#slideHome .img:before,
-#slideHome .video:before{
+#slideHome .img:before{
 	content: "";
 	position: absolute;
 	top: 0;

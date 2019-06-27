@@ -44,9 +44,6 @@ function movingbox_regis_styles(){
     elseif (is_page('popup-tu-van') || is_page('popup-tu-van-thanh-cong')) {
         wp_enqueue_style('mvbStyle-module-service', TEMP_DIR.'/style/service.css','all' );
     }
-    elseif (is_page('lien-he')) {
-        wp_enqueue_style('mvbStyle-module-lienhe', TEMP_DIR.'/style/contact.css','all' );
-    }
     elseif(is_post_type_archive('quanly-dichvu') OR is_singular('quanly-dichvu')){
         wp_enqueue_style('mvbStyle-module-service', TEMP_DIR.'/style/service.css','all' );
         wp_enqueue_script('mvbScript-module-service', TEMP_DIR.'/js/service/service.js');
@@ -69,7 +66,7 @@ function movingbox_regis_ajax(){
 add_action('wp_footer', 'movingbox_regis_ajax');
 function remove_menus() {
     remove_menu_page( 'jetpack' );                    //Jetpack* 
-    remove_menu_page( 'edit.php' );                   //Posts
+    // remove_menu_page( 'edit.php' );                   //Posts
     remove_menu_page( 'edit-comments.php' );          //Comments
     // remove_menu_page( 'plugins.php' );                //Plugins
     remove_menu_page( 'tools.php' );                  //Tools

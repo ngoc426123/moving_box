@@ -31,7 +31,6 @@ $label = array(
 $support = array(
     'title',
     'thumbnail',
-    'attachment',
 );
 $arr = array( 
     'labels' => $label, 
@@ -83,15 +82,6 @@ function callback_function_banner_info($post){
         ?>
         <input style="width:100%" class="form-control" type="text" name="wpcf-link" id="link" value='<?php echo $value ?>'>
     </div>
-    <div class="form-group">
-        <p class="post-attributes-label-wrapper">
-            <label class="post-attributes-label-wrapper" for="email">Video (Nếu có link video sẽ không lấy hình ảnh)</label>
-        </p>
-        <?php
-        $value=get_post_meta( $post->ID, 'wpcf-video', true );
-        ?>
-        <input style="width:100%" class="form-control" type="text" name="wpcf-video" id="video" value='<?php echo $value ?>'>
-    </div>
 <?php
 }
 function callback_function_banner_check($post){
@@ -135,9 +125,6 @@ function callback_update_banner( $post_id ){
     }
     if($_POST["wpcf-link"]){
         update_post_meta( $post_id, 'wpcf-link', $_POST["wpcf-link"] );
-    }
-    if($_POST["wpcf-video"]){
-        update_post_meta( $post_id, 'wpcf-video', $_POST["wpcf-video"] );
     }
 }
 add_action( 'save_post', 'callback_update_banner' );

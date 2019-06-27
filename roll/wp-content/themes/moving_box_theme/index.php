@@ -19,21 +19,9 @@
 			$text1 = get_post_meta( $value->ID, 'wpcf-text1', $single = true );
 			$text2 = get_post_meta( $value->ID, 'wpcf-text2', $single = true );
 			$link = get_post_meta( $value->ID, 'wpcf-link', $single = true );
-			$video = get_post_meta( $value->ID, 'wpcf-video', $single = true );
 		?>
 			<div class="item">
-		<?php
-			if(!empty($video)){
-		?>
-				<div class="video"><video autoplay loop muted><source src="<?php echo __($video); ?>"></video></div>
-		<?php
-			}
-			else{
-		?>
 				<div class="img" style="background-image: url(<?php echo __($img); ?>);"></div>
-		<?php
-			}
-		?>
 				<div class="caption">
 					<div class="t1"><?php echo __($text1); ?></div>
 					<div class="t2"><?php echo __($text2); ?></div>
