@@ -1,6 +1,6 @@
 <?php
 define(TEMP_DIR, get_template_directory_uri());
-define(HOME_URL, pll_home_url());
+define(HOME_URL, home_url());
 define(HOME_TITLE, get_bloginfo('name'));
 add_filter('show_admin_bar', '__return_false');
 add_theme_support('post-thumbnails');
@@ -177,18 +177,6 @@ function form_post_tuvan() {
 /////////////////                                               /////////////////
 ///                        REGIS TRANSLATE LANGUAGE                           /// 
 /////////////////                                               /////////////////
-pll_register_string("Menu","menu-home");
-pll_register_string("Menu","menu-about");
-pll_register_string("Menu","menu-service");
-pll_register_string("Menu","menu-partner");
-pll_register_string("Menu","menu-contact");
-pll_register_string("Menu","menu-rules");
-pll_register_string("Menu","menu-policy");
-pll_register_string("Ngôn ngữ","language");
-pll_register_string("Đọc thêm","readmore");
-pll_register_string("Text placeholder","text_search_placeholder");
-pll_register_string("Text trang chủ","home-service-title");
-pll_register_string("Text trang chủ","home-service-des");
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////                                               /////////////////
 ///                        IMPORT                                             /// 
