@@ -37,7 +37,7 @@
 				<div class="caption">
 					<div class="t1"><?php echo __($text1); ?></div>
 					<div class="t2"><?php echo __($text2); ?></div>
-					<div class="link"><a href="<?php echo __($link); ?>"><span><?php echo __($GLOBALS['lang']['read_more']); ?></span></a></div>
+					<div class="link"><a href="<?php echo __($link); ?>"><span><?php echo pll__("readmore"); ?></span></a></div>
 				</div>
 			</div>
 		<?php
@@ -58,8 +58,8 @@
 	<!--===SERVICE HOME===-->
 	<div class="serviceHome">
 		<div class="wrapper">
-			<div class="title"><h2>Hơn <span>15</span> Dịch vụ cung ứng</h2></div>
-			<div class="dess">Dịch vụ đa dạng cùng đội ngũ hỗ trợ chuyên nghiệp sẽ là giá trị của chúng tôi dành cho các bạn, sự phục vụ ân cần và trách nghiệm luôn là kim chỉ nam cho dịch vụ vận chuyển của công ty duy trì và phát triển.</div>
+			<div class="title"><h2><?php echo pll__("home-service-title"); ?></h2></div>
+			<div class="dess"><?php echo pll__("home-service-des"); ?></div>
 		</div>
 		<div id="slideService" class="slick-init">
 			<?php
@@ -90,7 +90,7 @@
 	<!--===PARTNER HOME===-->
 	<div class="partnerHome">
 		<div class="wrapper">
-			<div class="title"><h2>Đối tác</h2></div>
+			<div class="title"><h2><?php echo pll__("menu-partner"); ?></h2></div>
 			<div class="content">
 				<div id="slidePartner" class="slick-init">
 					<?php

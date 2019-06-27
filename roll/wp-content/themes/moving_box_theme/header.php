@@ -1,4 +1,3 @@
-<?php require_once("languages/".pll_current_language('slug').".php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +26,7 @@
 					<div class="header-tools hidden-sm hidden-xs">
 						<div class="row-tools mb">
 							<div class="languageTop">
-								<div class="icon"><span><?php echo __($GLOBALS['lang']['language']); ?></span></div>
+								<div class="icon"><span><?php echo pll__("language"); ?></span></div>
 								<div class="popup">
 									<ul>
 										<?php 
@@ -39,18 +38,18 @@
 								</div>
 							</div>
 							<div class="hotlineTop">
-								<div class="txt"><?php echo __($GLOBALS['lang']['menu']['contact']); ?></div>
+								<div class="txt"><?php echo pll__("menu-contact"); ?></div>
 								<a href="tel:0522.927.508"><span>0522.927.508</span></a>
 							</div>
 						</div>
 						<div class="row-tools">
 							<div class="menuTop">
 								<ul>
-									<li><a href="<?php echo __(HOME_URL); ?>"><?php echo __($GLOBALS['lang']['menu']['home']); ?></a></li>
-									<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-gioi-thieu'))); ?>"><?php echo __($GLOBALS['lang']['menu']['about']); ?></a></li>
-									<li><a href="<?php echo __(get_post_type_archive_link("quanly-dichvu")); ?>"><?php echo __($GLOBALS['lang']['menu']['service']); ?></a></li>
-									<li><a href="<?php echo __(get_post_type_archive_link("quanly-doitac")); ?>"><?php echo __($GLOBALS['lang']['menu']['partner']); ?></a></li>
-									<li><a href="<?php echo __(get_permalink(get_page_by_path('popup-lien-he'))); ?>"><?php echo __($GLOBALS['lang']['menu']['contact']); ?></a></li>
+									<li><a href="<?php echo __(HOME_URL); ?>"><?php echo pll__("menu-home"); ?></a></li>
+									<li><a href="<?php echo __(get_permalink(get_page_by_path('page-gioi-thieu'))); ?>"><?php echo pll__("menu-about"); ?></a></li>
+									<li><a href="<?php echo __(get_post_type_archive_link("quanly-dichvu")); ?>"><?php echo pll__("menu-service"); ?></a></li>
+									<li><a href="<?php echo __(get_post_type_archive_link("quanly-doitac")); ?>"><?php echo pll__("menu-partner"); ?></a></li>
+									<li><a href="<?php echo __(get_permalink(get_page_by_path('page-lien-he'))); ?>"><?php echo pll__("menu-contact"); ?></a></li>
 								</ul>
 							</div>
 							<div class="searchTop">
@@ -59,7 +58,7 @@
                                     <div class="wrapper">
                                         <form name="formSearch" method="post" action="" class="box_search">
                                             <input name="keyword" type="text" class="text_search">
-                                            <span class="place"><?php echo __($GLOBALS['lang']['placeholder_text_search']); ?></span>
+                                            <span class="place"><?php echo pll__("text_search_placeholder"); ?></span>
                                             <input name="do_search" value="1" type="hidden">
                                         </form>
                                     </div>
