@@ -2,6 +2,17 @@
 #mv-landingpage{
 	height: 100vh;
 	width: 100%;
+	position: relative;
+}
+#mv-landingpage .logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	max-width: 120px;
+	z-index: 2;
+}
+#mv-landingpage .logo img{
+	width: 100%;
 }
 #mv-landingpage .grid{
 	display: -webkit-flex;
@@ -21,38 +32,28 @@
 	position: relative;
 	overflow: hidden;
 }
-#mv-landingpage .boxMV:before{
-	content: "";
+#mv-landingpage .boxMV .img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 80%;
+	max-width: 350px;
+}
+#mv-landingpage .boxMV .link{
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: inherit;
-	z-index: 1;
-	opacity: 0.75;
-}
-#mv-landingpage .boxMV .img{
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-    transition: -webkit-transform 4s cubic-bezier(0,.6,.45,1);
-    transition: transform 4s cubic-bezier(0,.6,.45,1);
-    transition: transform 4s cubic-bezier(0,.6,.45,1), -webkit-transform 7s cubic-bezier(0,.6,.45,1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-#mv-landingpage .boxMV:hover .img{
-	-webkit-transform: scale(1.18);
-	-ms-transform: scale(1.18);
-	-o-transform: scale(1.18);
-	transform: scale(1.18);
+	z-index: 2;
 }
 #mv-landingpage .txtMV{
-	font-size: 105px;
-	line-height: 115px;
+	font-size: 95px;
+	line-height: 105px;
 	font-weight: 900;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -60,9 +61,9 @@
 	top: 50%;
 	z-index: 2;
 	text-align: center;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 #mv-landingpage .boxMV.go .txtMV{
 	right: 0;
@@ -70,7 +71,7 @@
 	-ms-transform: translate(50%,-50%);
 	-o-transform: translate(50%,-50%);
 	transform: translate(50%,-50%);
-	color: #bd85ea;
+	color: #f6851f;
 }
 #mv-landingpage .boxMV.go:hover .txtMV{
 	-webkit-transform: translate(100%,-50%);
@@ -78,47 +79,223 @@
 	-o-transform: translate(100%,-50%);
 	transform: translate(100%,-50%);
 }
-#mv-landingpage .boxMV.truck .txtMV{
+#mv-landingpage .boxMV.roll .txtMV{
 	left: 0;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	color: #e1ea6a;
+	color: #FAEC24;
 }
-#mv-landingpage .boxMV.truck:hover .txtMV{
+#mv-landingpage .boxMV.roll:hover .txtMV{
 	-webkit-transform: translate(-100%,-50%);
 	-ms-transform: translate(-100%,-50%);
 	-o-transform: translate(-100%,-50%);
 	transform: translate(-100%,-50%);
 }
-#mv-landingpage .t1{
-	text-align: center;
-	font-size: 35px;
-	line-height: 45px;
-	color:#ffffff;
+#mv-landingpage .copyright{
 	position: absolute;
-	top: 50%;
+	bottom: 20px;
+	right: 20px;
+	color:#999999;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: right;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+#mv-landingpage .copyright .per{
+	margin: 0 5px;
+}
+#mv-landingpage .copyright span{
+	font-style: italic;
+}
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media all and (min-width: 991px){
+#mv-landingpage .boxMV .img svg .st0{
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	fill: transparent;
+}
+#mv-landingpage .boxMV.go:hover .img svg .st0{
+	fill: #f6851f;
+	-webkit-transform: initial;
+	-ms-transform: initial;
+	-o-transform: initial;
+	transform: initial;
+}
+#mv-landingpage .boxMV.go .img svg .l1,
+#mv-landingpage .boxMV.go .img svg .l2,
+#mv-landingpage .boxMV.go .img svg .l3,
+#mv-landingpage .boxMV.go .img svg .t1,
+#mv-landingpage .boxMV.go .img svg .t2{
+	-webkit-transform: translateX(-10%);
+	-ms-transform: translateX(-10%);
+	-o-transform: translateX(-10%);
+	transform: translateX(-10%);
+}
+#mv-landingpage .boxMV.go:hover .img svg .l1{
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+#mv-landingpage .boxMV.go:hover .img svg .l2{
+	-webkit-transition-delay: 0.25s;
+	-o-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+#mv-landingpage .boxMV.go:hover .img svg .l3{
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+#mv-landingpage .boxMV.go:hover .img svg .t1{
+	-webkit-transition-delay: 0.35s;
+	-o-transition-delay: 0.35s;
+	transition-delay: 0.35s;
+}
+#mv-landingpage .boxMV.go:hover .img svg .t2{
+	-webkit-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+#mv-landingpage .boxMV.go:hover .img svg .t3{
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+#mv-landingpage .boxMV.roll:hover .img svg .st0{
+	fill: #FAEC24;
+	-webkit-transform: initial;
+	-ms-transform: initial;
+	-o-transform: initial;
+	transform: initial;
+}
+#mv-landingpage .boxMV.roll .img svg .t1,
+#mv-landingpage .boxMV.roll .img svg .t2,
+#mv-landingpage .boxMV.roll .img svg .t3,
+#mv-landingpage .boxMV.roll .img svg .t4{
+	-webkit-transform: translateY(20%);
+	-ms-transform: translateY(20%);
+	-o-transform: translateY(20%);
+	transform: translateY(20%);
+}
+#mv-landingpage .boxMV.roll:hover .img svg .t1{
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+#mv-landingpage .boxMV.roll:hover .img svg .t2{
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+#mv-landingpage .boxMV.roll:hover .img svg .t3{
+	-webkit-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+#mv-landingpage .boxMV.roll:hover .img svg .t4{
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+#mv-landingpage .boxMV.roll:hover .img svg .t5{
+	-webkit-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+}
+
+@media all and (max-width: 991px){
+#mv-landingpage .boxMV.go .img svg .st0{
+	fill: #f6851f;
+}
+#mv-landingpage .boxMV.roll .img svg .st0{
+	fill: #FAEC24;
+}
+#mv-landingpage .txtMV{
+	font-size: 80px;
+	line-height: 90px;
+	display: none;
+}
+#mv-landingpage .boxMV .img{
+	max-width: 250px;
+}
+}
+
+@media all and (max-width: 767px){
+#mv-landingpage .logo{
+	max-width: 80px;
+}
+#mv-landingpage .grid{
+	display: block;
+}
+#mv-landingpage .grid .col{
+	width: 100%;
+	height: 50%;
+}
+#mv-landingpage .boxMV .txtMV{
+	font-size: 70px;
+	line-height: 80px;
+}
+#mv-landingpage .boxMV.go .txtMV{
+	bottom: 0;
+	right:initial;
 	left: 50%;
+	top:initial;
+	-webkit-transform: translate(-50%,50%);
+	-ms-transform: translate(-50%,50%);
+	-o-transform: translate(-50%,50%);
+	transform: translate(-50%,50%);
+}
+#mv-landingpage .boxMV.go:hover .txtMV{
+	-webkit-transform: translate(-50%,100%);
+	-ms-transform: translate(-50%,100%);
+	-o-transform: translate(-50%,100%);
+	transform: translate(-50%,100%);
+}
+#mv-landingpage .boxMV.roll .txtMV{
+	top: 0;
+	left:initial;
+	left: 50%;
+	top:initial;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	text-transform: uppercase;
-	letter-spacing: 7px;
-	z-index: 2;
-	width: 400px;
 }
-#mv-landingpage .t1 .char{
-	opacity: 0;
+#mv-landingpage .boxMV.roll:hover .txtMV{
+	-webkit-transform: translate(-50%,-100%);
+	-ms-transform: translate(-50%,-100%);
+	-o-transform: translate(-50%,-100%);
+	transform: translate(-50%,-100%);
 }
-#mv-landingpage .boxMV:hover .t1 .char{
-	-webkit-animation: letter-fade-in 0.7s 0s ease both;
-    animation: letter-fade-in 0.7s 0s ease both;
+#mv-landingpage .copyright{
+	right:initial;
+	width: 100%;
+	justify-content: center;
 }
-@keyframes letter-fade-in{
-  0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
-  66%  { opacity: 0.6; text-shadow: 0px 0px 10px rgba(255,255,255,0.2) }
-  77%  { opacity: 1;  }
-  100% { opacity:1; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+#mv-landingpage .boxMV .img{
+	max-width: 180px;
+}
+#mv-landingpage .boxMV.go .img{
+	top: 65%;
+}
+#mv-landingpage .boxMV.roll .img{
+	top: 35%;
+}
+}
+
+@media all and (max-width: 400px){
+#mv-landingpage .boxMV .txtMV{
+	font-size: 60px;
+	line-height: 80px;
+}
 }
