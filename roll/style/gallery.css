@@ -1,0 +1,80 @@
+.mvb-gallery {
+  font-family: 'Muli', sans-serif;
+}
+.mvb-gallery .grid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -1px;
+}
+.mvb-gallery .grid .col{
+  width: 33.333333%;
+  padding: 0 1px;
+  margin-bottom: 10px;
+}
+.gallery .img a {
+  padding-top: 66.666666%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.gallery .img a img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gallery .img .caption {
+  padding: 10px 20px;
+}
+.gallery .tend a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+.gallery .sl {
+  font-weight: 300;
+  color: #999999;
+  font-size: 12px;
+  line-height: 20px;
+}
+.gridMasonry{
+  margin: 0 -1px;
+}
+.gridMasonry .col,
+.gridMasonry .colHeight {
+  width: 25%;
+  padding: 0 1px;
+}
+.gridMasonry .col {
+  margin-bottom: 2px;
+}
+.gridMasonry .col a{
+  display: block;
+}
+
+img{
+  max-width: 100%;
+}
+
+@media all and (max-width: 991px) {
+  .mvb-gallery .grid .col {
+    width: 50%;
+  }
+  .gridMasonry .col,
+  .gridMasonry .colHeight {
+    width: 33%;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .mvb-gallery .grid .col {
+    width: 100%;
+  }
+  .gridMasonry .col,
+  .gridMasonry .colHeight {
+    width: 50%;
+  }
+}
