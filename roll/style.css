@@ -12,6 +12,12 @@
 /*============================================================*/
 /*===========================SETUP============================*/
 /*============================================================*/
+[data-show-hide="Desktop"] {
+    display: block;
+}
+[data-show-hide="Mobile"] {
+    display: none;
+}
 *,*:active,*:focus{
     outline: 0;
 }
@@ -895,6 +901,12 @@ p{
 }
 
 @media all and (max-width: 991px){
+[data-show-hide="Desktop"] {
+    display: none;
+}
+[data-show-hide="Mobile"] {
+    display: block;
+}
 .row{
     margin-left: -10px;
     margin-right: -10px;
