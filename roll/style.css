@@ -887,6 +887,167 @@ p{
     opacity: 0.6;
 }
 /*=================END APP LAZYLOAD============*/
+.hotline_mobile {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+.hotline_mobile a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    background-color: #de0000;
+    color: #ffffff;
+    border-radius: 100%;
+    position: relative;
+}
+.hotline_mobile a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 1px #de0000;
+    opacity: 0;
+    -webkit-animation:phonering-circle 1s linear infinite;
+    animation:phonering-circle 1s linear infinite;
+    pointer-events: none;
+    border-radius: 100%;
+}
+.hotline_mobile a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 1px #de0000;
+    opacity: 0;
+    -webkit-animation:phonering-circle 1s 0.5s linear infinite;
+    animation:phonering-circle 1s 0.5s linear infinite;
+    pointer-events: none;
+    border-radius: 100%;
+}
+.hotline_mobile a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    pointer-events: none;
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg);
+                transform:translate(-50%, -50%) rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-webkit-keyframes phonering-circle {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                  opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+                  opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1.6);
+                transform: scale(1.6);
+                  opacity: 0;
+    }
+}
+
+@keyframes phonering-circle {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                  opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+                  opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1.6);
+                transform: scale(1.6);
+                  opacity: 0;
+    }
+}
 /*==========================================================================*/
 /*============================RESPONSIVE====================================*/
 /*==========================================================================*/
